@@ -1,10 +1,19 @@
+body{
+    padding: 5%;
+}
+
 #header{
     height: 200px;
     text-align: center;
+    padding: 2%;
 }
 
-#header img{
-    height: 80%;
+#logo{
+    height: 60%;
+}
+
+#banner{
+    height: 50%;
 }
 
 #footer{
