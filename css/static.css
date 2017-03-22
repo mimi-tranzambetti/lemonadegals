@@ -1,6 +1,7 @@
 body{
-    padding: 5%;
+    padding: 2% 5%;
     font-family: 'Nunito', sans-serif;
+    background-color: azure;
 }
 
 h1{
@@ -11,18 +12,51 @@ h2{
     font-family: 'Fredoka One', cursive;
 }
 
+#logo{
+    height: 100%;
+    float: left;
+}
+
 #header{
-    height: 200px;
-    text-align: center;
+    height: 75px;
     padding: 2%;
 }
 
-#logo{
-    height: 60%;
+a{
+    text-decoration: none;
+    color: grey;
 }
 
-#banner{
-    height: 50%;
+#navbar {
+	padding: 0px;
+    float: right;
+}
+
+	.navlinks a {
+		display: inline-block;
+		letter-spacing: 2px;
+		margin: 20px 20px 0 0;
+        opacity: 0.8;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+	}
+
+    .navlinks .current {
+		padding-bottom: 2px;
+		border-bottom: 1px solid #ccc;
+	}
+
+
+    .navlinks a:hover {
+        opacity: 1;
+	}
+
+
+.button{
+    width: 150px;
+    padding: 15px 50px;
+    color: white;
+    border: 2px solid white;
 }
 
 #footer{
