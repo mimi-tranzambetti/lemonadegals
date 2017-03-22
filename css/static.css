@@ -57,6 +57,15 @@ a{
     padding: 15px 50px;
     color: white;
     border: 2px solid white;
+    transition: 0.2s;
+        -moz-transition: 0.2s;
+}
+
+.button:hover{
+    background-color: #75E7F0;
+    color: #458989;
+    border: 2px solid #75E7F0;
+    
 }
 
 #footer{
