@@ -66,21 +66,20 @@ a{
 .button{
     letter-spacing: 2px;
     width: 150px;
-    padding: 12px 40px;
-    border: 1px solid #ffefbb;
-    font-weight: 800;
+    padding: 8px 40px;   
+    
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #458989;
+    color: #ffffcc;
     transition: 0.2s;
         -moz-transition: 0.2s;
-    color: #ffefbb;
-    border-radius: 20px;
-    
 }
 
 .button:hover{
+    border: 1px solid #ffefbb;
     background-color: #458989;
-    color: #ffffcc;
-    border: 1px solid #458989;
-    
+    color: #ffefbb;
 }
 
 .quote{
@@ -110,5 +109,15 @@ a{
 }
 
 #footer{
+    padding: 20px;
+    height: 100px;
+    background-color: darkslategray;
+}
 
+#private-side{
+    height: 60px;
+    float:right;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
