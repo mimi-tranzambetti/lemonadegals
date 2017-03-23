@@ -1,3 +1,7 @@
+@font-face {
+    font-family: kenyan;
+    src: url("kenyan coffee rg.ttf");
+}
 body{
     padding: 0px;
     font-family: 'Nunito', sans-serif;
@@ -79,7 +83,7 @@ a{
 }
 
 .quote{
-    font-family: 'Rhodium Libre', serif;
+    font-family: kenyan, serif;
     color: #ffefbb;
     font-size: 20pt;
     margin: 10px;
