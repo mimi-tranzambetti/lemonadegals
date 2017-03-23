@@ -7,10 +7,22 @@ body{
     margin: 0px;
     text-align: center;
     background-color: azure;
-    background: url('img/background.jpg');
-    background-size: contain;
-    padding: 5%;
-    height: 500px;
+    background: url('img/mac2.jpg') no-repeat center top;
+    background-size: cover;
+    padding: 20px;
+    height: 600px;
+}
+
+#splash-quote-div{
+    float: right;
+}
+
+#splash-quote{
+    margin: 40px; 
+    width: 300px; 
+    font-size: 30pt;
+    line-height: 35pt;
+    text-align: center;
 }
 
 a{

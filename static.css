@@ -60,17 +60,20 @@ a{
 
 
 .button{
+    font-family: 'Rhodium Libre', serif;
     width: 150px;
     padding: 12px 40px;
     border: 1px solid #ffefbb;
+    font-weight: 800;
     transition: 0.2s;
         -moz-transition: 0.2s;
     color: #ffefbb;
+    border-radius: 20px;
 }
 
 .button:hover{
     background-color: #458989;
-    color: #ffefbb;
+    color: #ffffcc;
     border: 1px solid #458989;
     
 }
@@ -92,7 +95,13 @@ a{
 }
 
 .gallery img {
-    margin: 20px;
+    margin: 20px 40px;
+}
+
+.sticker{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
 }
 
 #footer{
