@@ -1,0 +1,100 @@
+body{
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: ;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-family: 'Rhodium Libre', serif;
+    color: #458989;
+}
+
+h2{
+    font-family: 'Fredoka One', cursive;
+}
+
+#logo{
+    height: 60px;
+}
+
+#header{
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+#navbar {
+	padding: 0px;
+}
+
+	.navlinks a {
+		display: inline-block;
+		letter-spacing: 2px;
+		margin: 15px 20px 0 0;
+        opacity: 0.8;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+	}
+
+    .navlinks .current {
+		padding-bottom: 2px;
+		border-bottom: 1px solid #ccc;
+	}
+
+
+    .navlinks a:hover {
+        opacity: 1;
+	}
+
+
+.button{
+    width: 150px;
+    padding: 12px 40px;
+    border: 1px solid #ffefbb;
+    transition: 0.2s;
+        -moz-transition: 0.2s;
+    color: #ffefbb;
+}
+
+.button:hover{
+    background-color: #458989;
+    color: #ffefbb;
+    border: 1px solid #458989;
+    
+}
+
+.quote{
+    font-family: 'Rhodium Libre', serif;
+    color: #ffefbb;
+    font-size: 20pt;
+    margin: 10px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+}
+
+.gallery img {
+    margin: 20px;
+}
+
+#footer{
+
+}
