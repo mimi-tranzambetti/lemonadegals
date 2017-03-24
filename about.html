@@ -12,20 +12,52 @@
         <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
         <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
         <title>Lemonade Gals</title>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito|Rhodium+Libre" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <link rel="stylesheet" type="text/css" href="static.css">
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+        <script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+          $(".header").css("background-color", "#fff"); // if yes, then change the color of header to white
+           $(".header").css("height", "25px");
+           $(".navlinks a").css("color", "#458989");
+            $(".navlinks a").css("margin", "0px 10px");
+            $(".logo").css("height", "30px");
+            $(".logo").css("float", "left");
+            $(".navbar").css("float", "right");
+            
+            
+        } else {
+          $(".header").css("background-color", "transparent");
+
+            $(".header").css("height", "50px");
+           $(".navlinks a").css("color", "white");
+            $(".navlinks a").css("margin", "15px 10px");
+            $(".logo").css("float", "left");
+            $(".logo").css("height", "50px");
+            $(".navbar").css("float", "right");
+        
+        }
+      });
+    });
+</script>
+        
+        
     </head>
     <body>
-        
-        <div id="header">
+        <div class="header">
             
-            <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"> </a>
+            <a href="index.html"><img src="img/banner.png" alt="logo" class="logo"> </a>
             
-        <div id="navbar">
+        <div class="navbar">
             <div class="navlinks">
-              <a href="about.html">About</a>
+              <a href="about.html" class="current">About</a>
               <a href="product.html">Shop</a>
               <a href="breakdown.html">Breakdown</a>
             </div>
@@ -33,19 +65,79 @@
             
         </div> <!--close header-->
         
+        <div class="splash" id="splash-about">
+            <div>
+            <br><br><br><br><br>
+            <div class="title">About the Lemonade Gals</div>
+            </div>
+        <div>&nbsp;</div>
+        </div> <!--close splash--> 
         
         
-        <div class="gallery">
-        <a href="" class="button">Shop</a>
+        <div class="container" style="background-color: #ffffef;"> 
+        <h1>The Lemonade Gals Team</h1>
+        <p>We're a team of four students from the University of Southern California. </p>
         </div>
+        <div class="container" style="background-color: azure;"> 
+        <h1></h1>
+        <div class="gallery">
+        <div><img src="img/placeholder.jpg" class="team"><h3>Jenny Chung</h3><p>Jenny is real real cool</p></div>
+        <div><img src="img/placeholder.jpg" class="team"><h3>Pratima Manga</h3><p>Jenny is real real cool</p></div>
+        <div><img src="img/placeholder.jpg" class="team"><h3>Asia Clarkson</h3><p>Jenny is real real cool</p></div>
+        <div><img src="img/placeholder.jpg" class="team"><h3>Mimi Tran Zambetti</h3><p>Jenny is real real cool</p></div>
+        </div> <!--close img gallery-->
+        </div> <!--close team breakdown div-->
+        
+        <div class="container" style="background-color: #ffffef;"> 
+        <h1>Project Breakdown</h1>
+        <p>We're a team of four students from the University of Southern California. </p>
+        </div>
+        <div class="container" style="background-color: azure;"> 
+        <h1></h1>
+        <div class="gallery">
+        <div><img src="img/placeholder.jpg" class="team"><h3>Jenny Chung</h3><p>Jenny is real real cool</p></div>
+        <div><img src="img/placeholder.jpg" class="team"><h3>Pratima Manga</h3><p>Jenny is real real cool</p></div>
+        <div><img src="img/placeholder.jpg" class="team"><h3>Asia Clarkson</h3><p>Jenny is real real cool</p></div>
+        <div><img src="img/placeholder.jpg" class="team"><h3>Mimi Tran Zambetti</h3><p>Jenny is real real cool</p></div>
+        </div> <!--close img gallery-->
+        </div> <!--close team breakdown div-->
+        
+        <div class="footer">
+        <div class="media-links">
+        <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+        <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a> </div>
+    <p>© 2017 - LEMONADE GALS</p></div>
+        
+        <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a> <!--private side lemons-->
         
     </body> <!--close body-->
 </html>
 
-<!--Requirements for your main site:
+<!--Start-up Web Challenge Web site
+
+This group project is a small web site about the business venture from Case Studies in Innovation. The project has 2 parts: Customer-facing site and (private) pitch room/proposal sub-site
+ 
+Customer-facing site
+
+Core project web site consists of 5 - 8 pages.
+
+Requirements for your main site:
 The site should have a distinct and consistent design, from color scheme to appearance, across pages (use the branding developed for Prof. Thomas).
 Homepage with core highlights of the project.
 In-depth product description page(s). This can be 1 - 3 pages
 About Us page with pictures and short bios of each member.
 "Behind the scenes" page that features photos, details and anecdotes of the project. Note: You can choose to integrate this with the About Us page (into one page).
-An "assignment breakdown" page that lists each member and what tasks/roles they completed/fulfilled for the website assignment (both sections). This can include things like project management, design, graphic production, html and css production, and Q/A. Obviously a normal, public website would not have a page like this.-->
+An "assignment breakdown" page that lists each member and what tasks/roles they completed/fulfilled for the website assignment (both sections). This can include things like project management, design, graphic production, html and css production, and Q/A. Obviously a normal, public website would not have a page like this.
+ 
+"Pitch room" / Proposal site
+
+A sub-section of your site (which in a real site would be secured/private) will be a "Deal Room" sub-site that includes:
+
+"Summary" pages/s on your core project pitch/proposal
+"Marketplace" page/s with research on the industry, your competitors, etc.
+"Team" page/s that stress the roles and project-crucial strengths of each member (for the business venture, not the Coding1 project).
+"The deal" page/s with information on the proposal for funding. What are the projections and the deal terms?
+This website should be designed "mobile first"... i.e. the site should be optimized for a phone/small device. BUT, it should still adapt to larger screens.
+Use the research, insights and ideas from your lean canvas and customer personas in ACAD 182
+Note: The part 2 sub-site is intended as a private site for investors (not a public website). You do not have to do anything special in your coding, but you can act as if the site is password-protected/secured, and post information you might not normally want to be "public". 
+The completed site should be hosted on the aludra space of ONE of the group members, but EVERY member should have a link to the assignment from their classpage. -->

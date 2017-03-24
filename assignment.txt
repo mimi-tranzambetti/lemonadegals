@@ -8,21 +8,34 @@ Core project web site consists of 5 - 8 pages.
 
 Requirements for your main site:
 The site should have a distinct and consistent design, from color scheme to appearance, across pages (use the branding developed for Prof. Thomas).
-Homepage with core highlights of the project.
+
+Homepage with core highlights of the project. √
+
 In-depth product description page(s). This can be 1 - 3 pages
+
+
 About Us page with pictures and short bios of each member.
-"Behind the scenes" page that features photos, details and anecdotes of the project. Note: You can choose to integrate this with the About Us page (into one page).
+
+- "Behind the scenes" page that features photos, details and anecdotes of the project. Note: You can choose to integrate this with the About Us page (into one page).
+
 An "assignment breakdown" page that lists each member and what tasks/roles they completed/fulfilled for the website assignment (both sections). This can include things like project management, design, graphic production, html and css production, and Q/A. Obviously a normal, public website would not have a page like this.
+
  
 "Pitch room" / Proposal site
 
 A sub-section of your site (which in a real site would be secured/private) will be a "Deal Room" sub-site that includes:
 
 "Summary" pages/s on your core project pitch/proposal
+
 "Marketplace" page/s with research on the industry, your competitors, etc.
+
 "Team" page/s that stress the roles and project-crucial strengths of each member (for the business venture, not the Coding1 project).
+
 "The deal" page/s with information on the proposal for funding. What are the projections and the deal terms?
 This website should be designed "mobile first"... i.e. the site should be optimized for a phone/small device. BUT, it should still adapt to larger screens.
+
+
+
 Use the research, insights and ideas from your lean canvas and customer personas in ACAD 182
 Note: The part 2 sub-site is intended as a private site for investors (not a public website). You do not have to do anything special in your coding, but you can act as if the site is password-protected/secured, and post information you might not normally want to be "public". 
 The completed site should be hosted on the aludra space of ONE of the group members, but EVERY member should have a link to the assignment from their classpage.

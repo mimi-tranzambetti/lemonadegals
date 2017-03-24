@@ -2,9 +2,6 @@
     font-family: kenyan;
     src: url("kenyan coffee rg.ttf");
 }
-body{
-    text-align: center;
-}
 
 #header{
     position: fixed;
@@ -15,26 +12,21 @@ body{
         -moz-transition: 0.4s;
 }
 
-.splash{
-    margin: 0px;
-    text-align: center;
-    background-color: azure;
-    padding: 20px;
-    height: 750px;
-}
-
 #splash1{
     background: url('img/mac2.jpg') no-repeat center top;
     background-size: cover;
+    height: 750px;
 }
 
 #splash-quote-div{
     margin: 80px 40px;
     float: right;
 }
+
 #splash2{
     background: url('img/bottles2.jpg') no-repeat center top;
     background-size: cover;
+    height: 750px;
 }
 
 #splash2-quote-div{
@@ -43,11 +35,11 @@ body{
 }
 
 #splash-quote{
-    margin: 40px; 
     width: 300px; 
     font-size: 30pt;
     line-height: 35pt;
     text-align: center;
+    margin: 15px;
 }
 
 a{
