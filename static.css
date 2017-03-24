@@ -15,23 +15,24 @@ body{
 }
 
 h1{
-    font-family: 'Rhodium Libre', serif;
+    font-family: kenyan, serif;
+    letter-spacing: 1px;
     color: #458989;
 }
 
-h2{
-    font-family: 'Fredoka One', cursive;
-}
-
 #logo{
-    height: 60px;
+    height: 50px;
+    padding: 0px 40px;
+    transition: 0.2s;
+        -moz-transition: 0.2s;
 }
 
 #header{
     height: 100px;
-    padding: 30px;
+    padding: 20px 0px;
     text-align: center;
     margin: 0px;
+    
 }
 
 a{
@@ -40,13 +41,15 @@ a{
 }
 
 #navbar {
-	padding: 0px;
+	padding: 0px 40px;
+    
 }
 
 	.navlinks a {
 		display: inline-block;
 		letter-spacing: 2px;
-		margin: 15px 20px 0 0;
+		margin: 15px 10px;
+        
         opacity: 0.8;
         transition: 0.2s;
         -moz-transition: 0.2s;
@@ -67,7 +70,6 @@ a{
     letter-spacing: 2px;
     width: 150px;
     padding: 8px 40px;   
-    
     font-size: 15px;
     border-radius: 10px;
     background-color: #458989;
@@ -84,10 +86,13 @@ a{
 
 .quote{
     font-family: kenyan, serif;
+    letter-spacing: 1px;
     color: #ffefbb;
     font-size: 20pt;
     margin: 10px;
 }
+
+
 
 .gallery{
     display: flex;
@@ -112,6 +117,8 @@ a{
     padding: 20px;
     height: 100px;
     background-color: darkslategray;
+    color: #888;
+    font-size: 12px;
 }
 
 #private-side{

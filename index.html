@@ -30,6 +30,27 @@
             });
         });
     </script>
+        <script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 300) { // check if user scrolled more than 50 from top of the browser window
+          $("#header").css("background-color", "#fff"); // if yes, then change the color of header to white
+           $("#header").css("height", "50px");
+          $(".navlinks a").css("color", "#458989");
+            
+            $("#logo").css("float", "left");
+            $("#navbar").css("float", "right");
+        } else {
+          $("#header").css("background-color", "transparent");
+         $("#header").css("height", "100px");
+         $(".navlinks a").css("color", "#aaaaaa");
+            $("#logo").css("float", "none");
+            $("#navbar").css("float", "none");
+        }
+      });
+    });
+</script>
+        
         
     </head>
     <body>
@@ -47,34 +68,26 @@
             
         </div> <!--close header-->
         
-        
-        
-        <div id="splash">
-            <div id="splash-quote-div">
+        <div id="splash1" class="splash">
+            <div id="splash-quote-div" style="margin-top: 150px;">
             <div id="splash-quote" class="quote">Putting sweet spins on sour situations</div>
             <a href="product.html" class="button">Explore</a>
             </div>
-            
-            <br>
-            
-            
         <div>&nbsp;</div>
         </div> <!--close splash--> 
+        <div id="splash2" class="splash">
+            <div id="splash2-quote-div">
+            <div id="splash-quote" class="quote">Putting sweet spins on sour situations</div>
+            <a href="product.html" class="button">Explore</a>
+            </div>
+        <div>&nbsp;</div>
+        </div> <!--close splash--> 
+        
         <div class="container"><div class="chevron"><i class="fa fa-chevron-down" id="chevron"></i></div></div>
         
-        <div id="products"> 
-            <h1>Our Stickers</h1>
-        <div class="gallery">
-        <img src="img/dump-trump.png" class="sticker">
-        <img src="img/duck-frump.png" class="sticker">
-        <img src="img/she-persisted.png" class="sticker">
-        <img src="img/bitch-please.png" class="sticker">
-        <img src="img/alt-trump.png" class="sticker">
-        </div> <!--close img gallery-->
-        </div> <!--close product showcase div-->
-        
+
         <div id="footer">
- <br><a href="index.html"><img src="img/logo.png" alt="logo" id="private-side"> </a><h4>© 2017 - LEMONADE GALS</h4></div>
+ <br><a href="index.html"><img src="img/logo.png" alt="logo" id="private-side"> </a><p>© 2017 - LEMONADE GALS</p></div>
     </body> <!--close body-->
 </html>
 
