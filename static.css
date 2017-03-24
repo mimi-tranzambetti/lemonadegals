@@ -113,13 +113,26 @@ a{
     border-radius: 150px;
 }
 
-#footer{
+.footer{
     padding: 20px;
-    height: 100px;
-    background-color: darkslategray;
+    height: 80px;
+    background-color: #222;
     color: #888;
     font-size: 12px;
 }
+
+.media-links img {
+	margin: 10px;
+	width: 30px;
+	opacity: .5;
+	transition: .5s;
+    -moz-transition: .5s;
+}
+
+.media-links img:hover {
+	opacity: 1;
+}
+
 
 #private-side{
     height: 60px;
