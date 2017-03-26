@@ -34,7 +34,7 @@
     $(document).ready(function(){
       $(window).scroll(function() { // check if scroll event happened
         if ($(document).scrollTop() > 300) { // check if user scrolled more than 50 from top of the browser window
-          $(".header").css("background-color", "#fff"); // if yes, then change the color of header to white
+          $(".header").css("background-color", "RGBA(255,255,255,0.9)"); // if yes, then change the color of header to white
            $(".header").css("height", "50px");
           $(".navlinks a").css("color", "#458989");
             
@@ -68,16 +68,17 @@
             
         </div> <!--close header-->
         
-        <div id="splash1" class="splash">
-            <div id="splash-quote-div" style="margin-top: 150px;">
-            <div class="title" id="splash-quote" >Putting sweet spins on sour situations</div>
+        <div id="splash1" class="splash" class="parallax">
+            <div id="splash-quote-div" style="margin-top: 120px; float: left;">
+            <div class="title" id="splash-quote" >We're putting sweet spins on sour situations</div>
             <a href="product.html" class="button">Explore</a>
             </div>
         <div>&nbsp;</div>
         </div> <!--close splash--> 
+        
         <div id="splash2" class="splash">
-            <div id="splash2-quote-div">
-            <div class="title" id="splash-quote">Putting sweet spins on sour situations</div>
+            <div id="splash2-quote-div" style=" float: right;">
+            <div class="title" id="splash-quote">Shop Our Collection</div>
             <a href="product.html" class="button">Explore</a>
             </div>
         <div>&nbsp;</div>

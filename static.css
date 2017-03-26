@@ -17,10 +17,11 @@ body{
 }
 
 h1{
-    font-family: kenyan, serif;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 1px;
-    color: #458989;
+    color: #41c2be;
 }
+
 
 .logo{
     height: 50px;
@@ -42,23 +43,24 @@ h1{
 
 .splash{
     text-align: center;
-    background: #fff url('img/placeholder.jpg') no-repeat;
 	background-position: 50% 40%;
 	background-size: 100vw;
 	height: 200px;
 	padding: 30px;
 	vertical-align: middle;
+    
 }
 	#splash-about {
-		background: #25aacf url('img/background.jpg') no-repeat;
-        background-position: 50% 70%;
-		background-size: 100vw;
+		background: url('img/productshot/trumpflower.jpg') no-repeat;
+        height:200px;
+         background-attachment: fixed;
+    background-position: 0px -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
 	}
 
-	#splash-breakdown {
-		background: #ef6738 url('img/header-orange.jpg') no-repeat;
-		background-position: 50% 40%;
-	}
+
 
 a{
     text-decoration: none;
@@ -101,9 +103,10 @@ a{
     font-size: 15px;
     border-radius: 10px;
     background-color: #458989;
-    color: #ffffcc;
+    color: whitesmoke;
     transition: 0.2s;
         -moz-transition: 0.2s;
+      box-shadow: 0px 1px 5px grey;
 }
 
 .button:hover{
@@ -113,9 +116,10 @@ a{
 }
 
 .title{
-    font-family: kenyan, serif;
+    font-family: 'Fredoka One', sans-serif;
     letter-spacing: 1px;
-    color: #ffefbb;
+    color: white;
+    text-shadow: 1px 1px 10px gray;
     margin: 15px;
     font-size: 40pt;
 }
@@ -130,19 +134,36 @@ a{
 }
 
 .gallery img {
-    margin: 20px 40px;
+    margin: 20px 20px;
 }
 
 .sticker{
     width: 300px;
     height: 300px;
-    border-radius: 150px;
+    border-radius: 10px;
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }
 
 .team{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    
+    border-radius: 5px;
 }
 
 
