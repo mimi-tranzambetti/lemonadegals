@@ -17,15 +17,18 @@
         
         <link rel="stylesheet" type="text/css" href="static.css">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+       <!-- <script src="jquery.js"></script>  -->
 
         <script>
     $(document).ready(function(){
       $(window).scroll(function() { // check if scroll event happened
         if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
-          $(".header").css("background-color", "#fff"); // if yes, then change the color of header to white
+          $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
            $(".header").css("height", "25px");
+            $(".header").css("box-shadow", "10px 0px 10px gray");
            $(".navlinks a").css("color", "#458989");
             $(".navlinks a").css("margin", "0px 10px");
             $(".logo").css("height", "30px");
@@ -35,7 +38,7 @@
             
         } else {
           $(".header").css("background-color", "transparent");
-
+$(".header").css("box-shadow", "0px 0px 0px white");
             $(".header").css("height", "50px");
            $(".navlinks a").css("color", "white");
             $(".navlinks a").css("margin", "15px 10px");
@@ -45,6 +48,13 @@
         
         }
       });
+        
+    //lol this doesnt work asia help
+    // $("#dumphover").on("click", function(){
+     //   $("#dumphover").attr("src","productshot/trumpflower.jpg").fadeIn();
+	// }); 
+
+        
     });
 </script>
         
@@ -53,7 +63,7 @@
     <body>
         <div class="header">
             
-            <a href="index.html"><img src="img/banner.png" alt="logo" class="logo"> </a>
+            <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
             
         <div class="navbar">
             <div class="navlinks">
@@ -65,7 +75,7 @@
             
         </div> <!--close header-->
         
-        <div class="splash" id="splash-about" ">
+        <div class="splash" id="splash-about">
             <div>
             <br><br><br><br><br>
             <div class="title">Our Stickers</div>
@@ -83,17 +93,17 @@
             <h1></h1>
         <div class="gallery">
             
-        <div> <img src="img/dump-trump.png" class="sticker">  <h3>Dump Trump</h3></div>    
-        <div><img src="img/duck-frump.png" class="sticker"> <h3>Duck Frump</h3></div>
-        <div><img src="img/she-persisted.png" class="sticker"> <h3>Elizabeth Warren</h3></div> 
+        <div > <img src="img/dump-trump.png" class="sticker" id="dumphover">  <h3>Dump Trump</h3></div>    
+        <div><img src="img/duck-frump.png" class="sticker" id="frumphover"> <h3>Duck Frump</h3></div>
+        <div><img src="img/she-persisted.png" class="sticker" id="persisthover"> <h3>Elizabeth Warren</h3></div> 
             </div>
             <div class="gallery">
-        <div><img src="img/bitch-please.png" class="sticker"> <h3>*****, Please</h3></div>
-        <div><img src="img/alt-trump.png" class="sticker"> <h3>Alternative Trump</h3></div>
-                <div><img src="img/more.jpg" class="sticker"> <h3> Give Us Suggestions </h3></div>
+        <div><img src="img/bitch-please.png" class="sticker" id="pleasehover"> <h3>*****, Please</h3></div>
+        <div><img src="img/alt-trump.png" class="sticker" id="althover"> <h3>Alternative Trump</h3></div>
+                <div><img src="img/more.jpg" class="sticker" id="suggesthover"> <h3> Give Us Suggestions </h3></div>
             </div>
         </div> <!--close img gallery-->
-        </div> <!--close product showcase div-->
+        <!--close product showcase div-->
         
         <!-- <div class="container" style="background-color: #ffffef;"> 
         <h1>Custom Requests</h1>
@@ -123,7 +133,7 @@
         
         
       
-        </div> <!--contact div-->
+         <!--contact div-->
         
         <div class="footer">
         <div class="media-links">
@@ -136,6 +146,7 @@
         <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a> <!--private side lemons-->
         
     </body> <!--close body-->
+    
 </html>
 
 <!--Start-up Web Challenge Web site
