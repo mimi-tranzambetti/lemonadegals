@@ -60,6 +60,15 @@ h1{
         
 	}
 
+#dealroomheader{
+    background: url('img/productshot/carrothold.jpg') no-repeat;
+        height:200px;
+         background-attachment: fixed;
+    background-position: 0px -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 a{
@@ -246,9 +255,6 @@ a{
     
 }
 
-#squareish{
-    overflow: hidden;
-}
 
 /**slideshow **/
 #thumbnails {
