@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel=icon href="img/favicon.png">
+        
+        <meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Lemonade Gals" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
+        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
+        <title>Lemonade Gals</title>
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="static.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+       <!-- <script src="jquery.js"></script>  -->
+
+        <script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+          $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
+           $(".header").css("height", "25px");
+            $(".header").css("box-shadow", "10px 0px 10px gray");
+           $(".navlinks a").css("color", "#458989");
+            $(".navlinks a").css("margin", "0px 10px");
+            $(".logo").css("height", "30px");
+            $(".logo").css("float", "left");
+            $(".navbar").css("float", "right");
+            
+            
+        } else {
+          $(".header").css("background-color", "transparent");
+$(".header").css("box-shadow", "0px 0px 0px white");
+            $(".header").css("height", "50px");
+           $(".navlinks a").css("color", "white");
+            $(".navlinks a").css("margin", "15px 10px");
+            $(".logo").css("float", "left");
+            $(".logo").css("height", "50px");
+            $(".navbar").css("float", "right");
+        
+        }
+      });
+        
+
+        
+    });
+</script>
+        
+        
+    </head>
+    <body>
+        <div class="header">
+            
+            <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+            
+        <div class="navbar">
+            <div class="navlinks">
+              <a href="about.html" >About</a>
+              <a href="product.html" class="current">Shop</a>
+              <a href="breakdown.html">Breakdown</a>
+            </div>
+        </div> <!--close navbar-->
+            
+        </div> <!--close header-->
+        
+        <div class="splash" id="splash-about">
+            <div>
+            <br><br><br><br><br>
+            <div class="title">Our Stickers</div>
+            </div>
+        <div>&nbsp;</div>
+        </div> <!--close splash--> 
+        
+        
+        
+        <div class="container"> 
+            <br> <br>
+
+            
+        <div id="productleft"> <img src="img/dump-trump.png" class="productsticker" id="dump1">  
+            
+            <div id="thumbnails">
+
+  <img src="img/productshot/dumpwall.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump2" />                                                                    
+<img src="img/productshot/dumpcomp.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump3" />
+<img src="img/productshot/trumpflower.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump4" />
+    <img src="img/dump-trump.png" width="70px" height="70px" border="0" class="thumbnail" id="dump5" />
+  
+  
+
+
+   <br style="clear:both;">
+  
+  </div> 
+            
+            </div>    
+       
+            
+            
+
+             <script>
+                  $(document).ready(function(){
+                 //slideshow 
+                 
+$("#dump2").click(function(){
+		$("#dump1").hide()
+		$("#dump1").attr("src","img/productshot/dumpwall.jpg").fadeIn();
+   });
+                      
+                      $("#dump3").click(function(){
+		$("#dump1").hide()
+		$("#dump1").attr("src","img/productshot/dumpcomp.jpg").fadeIn();
+   });
+                      
+                      $("#dump4").click(function(){
+		$("#dump1").hide()
+		$("#dump1").attr("src","img/productshot/trumpflower.jpg").fadeIn();
+   });
+                      
+                      $("#dump5").click(function(){
+		$("#dump1").hide()
+		$("#dump1").attr("src","img/dump-trump.png").fadeIn();
+   });
+                      
+                  });
+
+        </script>
+            
+            
+            <h1 > DUMP TRUMP </h1>
+            <div id="form">
+            
+            <form>
+                
+                
+            <div class= "label" > Email: </div> 
+                <input type="email" name="email" required="1" placeholder="@usc.edu" class="largebox"> <br>  <br> 
+                
+                
+                <div class="label"> Size? </div> 
+                    <input type="checkbox" name="1"> 1" x 1" 
+                    <input type="checkbox" name="2"> 2" x 2"  
+                    <input type="checkbox" name="2.5"> 2.5" x 2.5" 
+                <br> <br> <br>
+                
+                
+                <div class="label"> &nbsp; </div>
+                <input type="submit" id="done" value="Done">
+                <div class="label"> &nbsp; </div>
+                <input type="reset" id="reset" value="Start Over">
+ 
+            </form>
+
+        
+        </div> <!--close img gallery-->
+        <!--close product showcase div-->
+
+
+        
+        
+      
+         <!--contact div-->
+         <br style="clear:both;" />
+        
+        <div class="footer" >
+        <div class="media-links">
+        <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+        <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a> </div>
+            
+            
+    <p>© 2017 - LEMONADE GALS</p></div>
+        
+        <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a> <!--private side lemons-->
+        
+    </body> <!--close body-->
+    
+</html>
