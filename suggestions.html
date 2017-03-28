@@ -91,74 +91,26 @@
     <br> <br>
 
 
-    <div id="productleft"> <img src="img/dump-trump.png" class="productsticker" id="dump1">
-
-        <div id="thumbnails">
-
-            <img src="img/productshot/dumpwall.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump2" />
-            <img src="img/productshot/dumpcomp.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump3" />
-            <img src="img/productshot/trumpflower.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump4" />
-            <img src="img/dump-trump.png" width="70px" height="70px" border="0" class="thumbnail" id="dump5" />
+    
 
 
 
+   
 
-            <br style="clear:both;">
-
-        </div>
-
-    </div>
-
-
-
-
-    <script>
-        $(document).ready(function() {
-            //slideshow 
-
-            $("#dump2").click(function() {
-                $("#dump1").hide()
-                $("#dump1").attr("src", "img/productshot/dumpwall.jpg").fadeIn();
-            });
-
-            $("#dump3").click(function() {
-                $("#dump1").hide()
-                $("#dump1").attr("src", "img/productshot/dumpcomp.jpg").fadeIn();
-            });
-
-            $("#dump4").click(function() {
-                $("#dump1").hide()
-                $("#dump1").attr("src", "img/productshot/trumpflower.jpg").fadeIn();
-            });
-
-            $("#dump5").click(function() {
-                $("#dump1").hide()
-                $("#dump1").attr("src", "img/dump-trump.png").fadeIn();
-            });
-
-        });
-
-    </script>
-
-
-    <h1> DUMP TRUMP </h1>
-    <div id="form">
+    <h1> SUGGESTIONS? </h1>
+    <div id="form" style="float:none; display:block; margin:auto;">
 
         <form>
 
 
-            <div class="label"> Email: </div>
+            <div class="label" style="width:50%;"> Email: </div>
             <input type="email" name="email" required="1" placeholder="@usc.edu" class="largebox"> <br> <br>
 
 
-            <div class="label"> Size? </div>
-            <input type="checkbox" name="1"> 1" x 1"
-            <input type="checkbox" name="2"> 2" x 2"
-            <input type="checkbox" name="2.5"> 2.5" x 2.5"
-            <br> <br> <br>
-
-
-            <div class="label"> &nbsp; </div>
+           <div class="label" style="width:50%;"> Give us a name for a sticker, a phrase, or an issue you want stickered! </div>
+                    <textarea name="concerns" required="1"> </textarea> <br>  <br> 
+<br>
+            <div class="label" style="width:40%;"> &nbsp; </div>
             <input type="submit" id="done" value="Done">
             <div class="label"> &nbsp; </div>
             <input type="reset" id="reset" value="Start Over">
