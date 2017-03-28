@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
     <head>
         <link rel=icon href="img/favicon.png">
         
@@ -57,66 +58,141 @@
             
             <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
             
+=======
+
+<head>
+    <link rel=icon href="img/favicon.png">
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lemonade Gals" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+    <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
+    <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
+    <title>Lemonade Gals</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+                    $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
+                    $(".header").css("height", "25px");
+                    $(".header").css("box-shadow", "10px 0px 10px gray");
+                    $(".navlinks a").css("color", "#458989");
+                    $(".navlinks a").css("margin", "0px 10px");
+                    $(".logo").css("height", "30px");
+                    $(".logo").css("float", "left");
+                    $(".navbar").css("float", "right");
+
+
+                } else {
+                    $(".header").css("background-color", "transparent");
+
+                    $(".header").css("height", "50px");
+                    $(".header").css("box-shadow", "0px 0px 0px white");
+                    $(".navlinks a").css("color", "white");
+                    $(".navlinks a").css("margin", "15px 10px");
+                    $(".logo").css("float", "left");
+                    $(".logo").css("height", "50px");
+                    $(".navbar").css("float", "right");
+
+                }
+            });
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+
+>>>>>>> Stashed changes
         <div class="navbar">
             <div class="navlinks">
-              <a href="deal.html" >Summary</a>
-              <a href="marketplace.html">Marketplace</a>
-              <a href="team.html" class="current">Team</a>
-                <a href="thedeal.html" >The Deal</a>
+                <a href="deal.html">Summary</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="team.html" class="current">Team</a>
+                <a href="thedeal.html">The Deal</a>
             </div>
-        </div> <!--close navbar-->
-            
-        </div> <!--close header-->
-        
-        <div class="splash" id="dealroomheader">
-            <div>
+        </div>
+        <!--close navbar-->
+
+    </div>
+    <!--close header-->
+
+    <div class="splash" id="dealroomheader">
+        <div>
             <br><br><br><br><br>
             <div class="title">Deal Room</div>
-            </div>
-            
+        </div>
+
         <div>&nbsp;</div>
-        </div> <!--close splash--> 
-        
-       
-        
-        <!--- <div class="container" style="background-color: white; padding: 5%; padding-right:20%; padding-left:20%;"> 
+    </div>
+    <!--close splash-->
+
+
+
+    <!--- <div class="container" style="background-color: white; padding: 5%; padding-right:20%; padding-left:20%;"> 
         <h1></h1>
         <p>An "assignment breakdown" page that lists each member and what tasks/roles they completed/fulfilled for the website assignment (both sections). This can include things like project management, design, graphic production, html and css production, and Q/A. Obviously a normal, public website would not have a page like this. </p>
         </div> -->
-        
-        <div style="height: 100%; background-color: white; padding-top: 5%;"> 
-             <h1> Team </h1>
-        <div id="nameleft">
-        <div class="container" style="background-color: white;"> 
-        <div id="itemhover"><h3 style="color:black;" id="jennytext">Jenny Chung </h3></div>
-        <div id="itemhover"><h3 style="color:black;" id="prattext">Pratima Manga </h3></div>
-        <div id="itemhover"><h3 style="color:black;" id="asiatext">Asia Clarkson </h3></div>
-        <div id="itemhover"><h3 style="color:black;" id="mimitext">Mimi Tran Zambetti </h3></div>
-            <br>
-            <br>
-            <br>
-        </div> <!--close img gallery-->
-        </div>
-        
-        <div id="nameright">
-             <div class="container" style="background-color: white;"> 
-                 <p style="color: black; text-align:left; padding:5%; padding-top:0;" id="sidetext"> <b> Click on a name to see contributions. </b> <br> <br> Each person in our team of four worked hard to ensure the quality of Lemonade Gals. </p>
-       
-            </div>
-        
-        </div>
-        
-            </div>
-         <br style="clear:both;" />
-        
-        
-        
-              
 
-        <div class="footer" style=" position:fixed;
+    <div style="height: 100%; background-color: white; padding-top: 5%;">
+        <h1> Team </h1>
+        <div id="nameleft">
+            <div class="container" style="background-color: white;">
+                <div id="itemhover">
+                    <h3 style="color:black;" id="jennytext">Jenny Chung </h3>
+                </div>
+                <div id="itemhover">
+                    <h3 style="color:black;" id="prattext">Pratima Manga </h3>
+                </div>
+                <div id="itemhover">
+                    <h3 style="color:black;" id="asiatext">Asia Clarkson </h3>
+                </div>
+                <div id="itemhover">
+                    <h3 style="color:black;" id="mimitext">Mimi Tran Zambetti </h3>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!--close img gallery-->
+        </div>
+
+        <div id="nameright">
+            <div class="container" style="background-color: white;">
+                <p style="color: black; text-align:left; padding:5%; padding-top:0;" id="sidetext"> <b> Click on a name to see contributions. </b> <br> <br> Each person in our team of four worked hard to ensure the quality of Lemonade Gals. </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br style="clear:both;" />
+
+
+
+
+
+    <div class="footer" style=" position:fixed;
     bottom: 0;
     width: 100%;">
         <div class="media-links">
+<<<<<<< Updated upstream
         <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
         <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a> </div>
             
@@ -172,10 +248,69 @@
                  $( this ).css( "color", "black");
             });
              
+=======
+            <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+            <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
+        </div>
 
-             
-         });
-        
-        </script>
-    
+        <p>© 2017 - LEMONADE GALS</p>
+    </div>
+
+    <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
+    <!--private side lemons-->
+
+</body>
+<!--close body-->
+
+
+
+<script>
+    $(document).ready(function() {
+        $("#jennytext").click(function() {
+            $("#sidetext").html("Jenny worked on the designs for 'Elizabeth Warren' and '*****, please.' Her main responsibilities for the stickers themselves included cleaning up and unifying the designs once they were narrowed down, helping create a color scheme and font. She also created the personas to identify the target market. Jenny took all the photos of the assets for the website and social media. For the website, she worked on the html, css, and js in the latter half of production for the consumer-side pages. This included editing the website after the skeleton was made, inputting photos and content, and cleaning up the website's aesthetic.");
+        });
+
+        $("#prattext").click(function() {
+            $("#sidetext").html("Pratima Manga designed some stickers in the intial round, which eventually didn’t get pushed to production. She also created the lean canvas report, which was important for identifying our market plan. She contributed to the website by writing the content and formatting the HTML for the “Pitch Room” portion of the project and contributions to the customer-facing site. In addition, she created a marketing plan for how to push the stickers into the USC market.");
+        });
+
+        $("#mimitext").click(function() {
+            $("#sidetext").html("Mimi designed the Duck Frump, Dump Trump, and Alternative Trump stickers, which were later standardized. She also created the skeleton and structure for the front-end portion of the website, including HTML, CSS, and JS. Mimi printed the initial batch of stickers, and worked on figuring out how to cut them with the vinyl cutter. She set up all social media accounts (Instagram, Facebook) and created initial content for the website.");
+        });
+
+        $("#asiatext").click(function() {
+            $("#sidetext").html(" Asia also provided designs for stickers that didn’t make it to final production. She helped unify the stickers in the latter stages, helping choose a cohesive color scheme and making them look like they were made by one person. Asia Clarkson is also the main JavaScript coder throughout all portions of the website and helped provide additional HTML/CSS production if necessary. She also helped research the business market.");
+        });
+
+        $("#jennytext").hover(function() {
+            $(this).css("color", "#98dbd9");
+        }, function() {
+            $(this).css("color", "black");
+        });
+
+        $("#asiatext").hover(function() {
+            $(this).css("color", "#98dbd9");
+        }, function() {
+            $(this).css("color", "black");
+        });
+
+        $("#prattext").hover(function() {
+            $(this).css("color", "#98dbd9");
+        }, function() {
+            $(this).css("color", "black");
+        });
+
+        $("#mimitext").hover(function() {
+            $(this).css("color", "#98dbd9");
+        }, function() {
+            $(this).css("color", "black");
+        });
+
+
+
+    });
+
+</script>
+>>>>>>> Stashed changes
+
 </html>
