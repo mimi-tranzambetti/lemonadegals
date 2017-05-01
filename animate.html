@@ -1,0 +1,197 @@
+<html>
+<head>
+<script src="http://webdev.usc.edu/jqm.js"></script>
+<script src="http://webdev.usc.edu/jqui.min.js"></script>
+<script>
+
+var play = function(){
+	
+        $(document).delay(0).queue(function(){
+			$("#sound").trigger("play");
+			});
+		
+        $("#hillarymouth").
+			animate({
+				"bottom":"-30px"
+			}, 2000, "swing", function(){ // anmate() callback function
+			});
+		
+		$("#berniemouth").
+			animate({
+				"bottom":"-40px", "left":"8px"
+			}, 2000, "swing", function(){ // anmate() callback function
+			});
+    
+		$("#trumphead1").
+			animate({
+				"left":"250px", "top":"100px"
+			}, 2500, "linear").
+			animate({
+				"left":"355", "top":"200px"
+			}, 4500, "swing", function(){  // animate() callback function
+			});
+    
+        $("#trumphead2").delay(800).animate({
+			"opacity":"1",
+		},10);
+		$("#trumphead2").animate({
+			"width":"500px",
+			"height":"500px"
+		},10000);
+
+	
+}
+
+$(document).ready(function(){
+	
+	$("body").on("click", function(){
+		play();
+	});
+
+	$("body").on("keypress", function(e){
+		if(e.keyCode==13) {   // key "" trigger
+			play();
+		}
+	});
+
+});
+    
+
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+<style>
+
+body{
+        background-image:url(background.jpg);
+        background-position: bottom;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+#hillarybase, #hillarymouth, #berniebase, #berniemouth, #trumpbase, #trumphead1, #trumphead2, #dump, #carrot, #persist, #dog, #duck{
+	position:absolute;	
+    bottom:0px;
+}
+
+#hillarybase {
+    right:0px;
+    z-index:10;
+}
+
+#hillarymouth {
+	right: 0px;
+    z-index:15;
+}
+
+#berniebase {
+    left: 0px;
+    z-index:5;
+}
+    
+#berniemouth{
+    left: 0px;
+    z-index:5;
+}
+    
+#trumpbase{
+    width: 100%;
+    text-align: center;
+}
+
+#trumphead1{
+    width: 100%;
+    text-align: center;
+    z-index:2;
+}
+
+#trumphead2{
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+    
+#trumphead2{
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+    
+#instructions {
+	position:fixed;
+	bottom:0px;
+	top:0px;
+	text-align:center;
+	width: 100%;
+	margin-bottom: 12px;
+}
+</style>
+</head>
+<body>
+
+<div id="hillarybase">
+	<img src="img/animate-assets/hillarybase.png" />
+</div>
+
+<div id="hillarymouth">
+	<img src="img/animate-assets/hillarymouth.png" />
+</div>
+    
+<div id="berniebase">
+	<img src="img/animate-assets/berniebase.png" />
+</div>
+    
+<div id="berniemouth">
+	<img src="img/animate-assets/berniemouth.png" />
+</div>
+    
+<div id="trumpbase">
+	<img src="img/animate-assets/trumpbase.png" />
+</div>
+
+<div id="trumphead1">
+	<img src="img/animate-assets/trumphead1.png" />
+</div>
+    
+<div id="trumphead2">
+	<img src="img/animate-assets/trumphead2.png" />
+</div>
+
+<div id="duck">
+	<img src="img/stickers/duck.png" />
+</div>
+
+<div id="dog">
+	<img src="img/stickers/dog.png" />
+</div>
+
+<div id="carrot">
+	<img src="img/stickers/carrot.png" />
+</div>
+
+<div id="dump">
+	<img src="img/stickers/dump.png" />
+</div>
+
+<div id="persist">
+	<img src="img/stickers/persist.png" />
+</div>
+
+    
+    
+<div id="instructions">
+	will the cone be able to catch all the scoops? click to find out!
+</div>
+
+
+<audio id="sound">
+	<source type="audio/mp3" src="ping.mp3">
+</audio>
+
+
+
+</body>
+</html>
