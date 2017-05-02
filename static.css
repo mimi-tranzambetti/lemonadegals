@@ -1072,7 +1072,7 @@ aside{
     background-color: #F39191;  
 }
 #cartdiv{
-    background-image: url(/img/macbooklid.png);
+    background-image: url("img/macbooklid.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -1083,7 +1083,7 @@ aside{
     height: 158px;
 }
 #cartdiv2{
-    background-image: url(/img/macbooklid.png);
+    background-image: url("img/macbooklid.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
