@@ -27,7 +27,7 @@ function setup() {
     
 function draw() {
     
-	//background(255,255,255); // transparent, so that it can be overlaid on website
+	background(255,255,255); // transparent, so that it can be overlaid on website
     //image("banner.png", 500,500, 200,200);
     
     console.log(frameCount); // logs the frame count just to keep track
@@ -58,8 +58,8 @@ function Burst() {
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
-
-function mousePressed() {
-  remove(); // remove whole sketch on mouse press
-}
+//
+//function mousePressed() {
+//  remove(); // remove whole sketch on mouse press
+//}
  
