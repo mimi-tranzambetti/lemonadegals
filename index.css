@@ -21,10 +21,7 @@
     background-repeat: no-repeat;
 }
 
-#splash-quote-div {
-    margin: 150px 40px;
-    float: right;
-}
+
 
 #splash2 {
     background: url('img/productshot/persistholdart.jpg') no-repeat center top;
@@ -33,6 +30,11 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#splash-quote-div {
+    margin: 150px 40px;
+    float: right;
 }
 
 #splash2-quote-div {
@@ -64,6 +66,7 @@ a {
     bottom: 150px;
     opacity: 0.7;
     transition: 0.2s;
+    visibility: visible;
 }
 
 .chevron:hover {
@@ -119,10 +122,34 @@ a {
 }
 
 @media (max-width: 1100px) {
+    .chevron{
+        visibility: hidden;
+    }
+    
     #splash2,#splash1 {
         background-attachment: scroll;
         background-size: auto;
         max-height: 400px;
     }
+    
+    #splash-quote-div {
+        margin-top:50px;
+        float: none;
+        padding: 0px;
+    }
+
+    #splash2-quote-div {
+        margin-top:50px;
+        float: none;
+        padding: 0px;
+    }
+
+    #splash-quote {
+        width: 300;
+        font-size: 20pt;
+        line-height: 30pt;
+        text-align: center;
+    }
+
     
 }

@@ -452,7 +452,9 @@ aside{
 #pickerdivhelp{
     
 }
-
+.logo{
+        visibility: visible;
+    }
 
 @media (max-width: 1024px) {
     h1 {
@@ -510,7 +512,12 @@ aside{
     height: 250px;
 }
     
+    
 }
+
+#animation{
+        visibility: visible;
+    }
 
 @media (max-width: 540px) {
     h1 {
@@ -548,5 +555,20 @@ aside{
     padding-right: 0%;
     padding-bottom: 5%;
 }
+    a {
+    text-decoration: none;
+    color: #eee;
 }
+    
+    #animation{
+        visibility: hidden;
+    }
+    
+    .logo{
+        visibility: collapse;
+    }
+
+}
+
+
 
