@@ -10,8 +10,9 @@ console.log(banners);
 //alert(document.querySelector("#bannerlogo").src);
 
 //document.querySelector("#bannerlogo").src = "img/logonew.png";
-document.querySelector("#bannerlogo").src = Cookies.get("bannercolor");
-
+//if(Cookies.get !=="nothing"){
+//document.querySelector("#bannerlogo").src = Cookies.get("bannercolor");
+//}
 var colorCheck = function () {
 
 
