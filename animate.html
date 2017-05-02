@@ -1,0 +1,305 @@
+<html>
+<head>
+<script src="http://webdev.usc.edu/jqm.js"></script>
+<script src="http://webdev.usc.edu/jqui.min.js"></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="typed.js-master/js/typed.js"></script>
+            <script src="typed.js"></script>
+            <script>
+              $(function(){
+                  $(".element").typed({
+                    strings: ["spunky designer", "curious maker", "quadrilingual foodie"],
+                    typeSpeed: 30,
+                    startDelay: 400,
+                    loop: true,
+                    backDelay: 800,
+                    backSpeed: 10,
+                      
+                      
+                  });
+              });
+            </script>
+
+    
+<script>
+
+var play = function(){
+	
+        $(document).delay(0).queue(function(){
+			$("#sound").trigger("play");
+			});
+		
+        $("#hillarymouth").
+			animate({
+				"bottom":"-30px"
+			}, 2000, "swing", function(){ // animate() callback function
+			});
+		
+		$("#berniemouth").
+			animate({
+				"bottom":"-40px", "left":"8px"
+			}, 2000, "swing", function(){ 
+            $("#trumphead img").attr("src", 
+            "img/animate-assets/trumphead2.png" );
+			});
+    
+		$("#trumphead img").
+			animate({
+                "filter":"brightness(5)",
+			}, 500, function(){  
+			});
+        
+    
+/*        $("#trumphead2").delay(800).animate({
+			"opacity":"1",
+		},10);
+		$("#trumphead2").animate({
+			"width":"500px",
+			"height":"500px"
+		},10000);
+        */
+   
+    $("#dump").delay(400).animate({
+			"opacity":"1",
+		},1000).animate({
+        "left":(($( document ).width())/2)-150,
+     },1800, function(){ 
+            $("#trumphead img").attr("src", 
+            "img/animate-assets/trumphead3.png" );
+			})
+    
+    
+
+     $("#dump img").delay(1800).animate({
+			"width":"30%",
+		},1000);
+    
+    $("#carrot").delay(400).animate({
+			"opacity":"1",
+		},1000).animate({
+        "left":(($( document ).width())/2)-150,
+     },2000);
+
+     $("#carrot img").delay(1800).animate({
+			"width":"30%",
+		},1000);
+    
+    $("#duck").delay(400).animate({
+			"opacity":"1",
+		},1000).animate({
+        "right":(($( document ).width())/2)-200,
+     },1800);
+    
+     $("#duck img").delay(1800).animate({
+			"width":"30%",
+		},1000);
+
+    $("#persist").delay(400).animate({
+			"opacity":"1",
+		},1000).animate({
+        "right":(($( document ).width())/2)-200,
+     },2000);
+    
+     $("#persist img").delay(1800).animate({
+			"width":"30%",
+		},1000);
+    
+    $("#dog").delay(400).animate({
+			"opacity":"1",
+		},1000).animate({
+        "right":(($( document ).width())/2)-200,
+     },1800);
+
+     $("#dog img").delay(1800).animate({
+			"width":"30%",
+		},1000);
+    
+}
+
+$(document).ready(function(){
+	
+	$("body").on("click", function(){
+		play();
+	});
+
+	$("body").on("keypress", function(e){
+		if(e.keyCode==13) {   // key "" trigger
+			play();
+		}
+	});
+
+});
+    
+
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+<style>
+
+body{
+        background-image:url(background.jpg);
+        background-position: bottom;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+#hillarybase, #hillarymouth, #berniebase, #berniemouth, #trumpbase, #trumphead, #dump, #carrot, #persist, #dog, #duck{
+	position: absolute;	
+    bottom:0px;
+}
+
+#hillarybase {
+    right:0px;
+    z-index:10;
+}
+
+#hillarymouth {
+	right: 0px;
+    z-index:15;
+}
+
+#berniebase {
+    left: 0px;
+    z-index:3;
+}
+    
+#berniemouth{
+    left: 0px;
+    z-index:5;
+}
+    
+#trumpbase{
+    width: 100%;
+    text-align: center;
+}
+
+#trumphead{
+    width: 100%;
+    text-align: center;
+    z-index:2;
+}
+
+
+
+#dump{
+    opacity: 0;
+    left:150px;
+    z-index:4;
+    bottom: 160px;
+}
+
+#carrot{
+    opacity: 0;
+    left:200px;
+    z-index:4;
+    bottom: 160px;
+    
+}
+
+#persist{
+    opacity: 0;
+    right:80px;
+    z-index:10;
+    bottom: 260px;
+}
+    
+#duck{
+    opacity: 0;
+    right:140px;
+    z-index:10;
+    bottom: 260px;
+}
+
+#dog{
+    opacity: 0;
+    right:100px;
+    z-index:10;
+    bottom: 260px;
+    }
+
+.sticker{
+text-align: center;
+
+    }
+    
+.sticker img{
+    width: 10%; 
+    
+    }
+
+
+    
+#instructions {
+	position:fixed;
+	bottom:0px;
+	top:0px;
+	text-align:center;
+	width: 100%;
+	margin-bottom: 12px;
+}
+</style>
+</head>
+<body>
+    
+
+ <div id="intro" style="clear: both;">
+                <h2>I'm a <span class="element" style="color: #ff7d31;"></span> with a </h2>
+                <h2>background in studio art and robotics. </h2>
+                
+            </div> <!-- close intro -->
+
+<div id="hillarybase">
+	<img src="img/animate-assets/hillarybase.png" />
+</div>
+
+<div id="hillarymouth">
+	<img src="img/animate-assets/hillarymouth.png" />
+</div>
+    
+<div id="berniebase">
+	<img src="img/animate-assets/berniebase.png" />
+</div>
+    
+<div id="berniemouth">
+	<img src="img/animate-assets/berniemouth.png" />
+</div>
+    
+<div id="trumpbase">
+	<img src="img/animate-assets/trumpbase.png" />
+</div>
+
+<div id="trumphead">
+	<img src="img/animate-assets/trumphead1.png" />
+</div>
+    
+
+<div id="duck" class="sticker">
+	<img src="img/stickers/duck.png" />
+</div>
+
+<div id="dog" class="sticker">
+	<img src="img/stickers/dog.png" />
+</div>
+
+<div id="carrot" class="sticker">
+	<img src="img/stickers/carrot.png" />
+</div>
+
+<div id="dump" class="sticker">
+	<img src="img/stickers/dump.png" />
+</div>
+
+<div id="persist" class="sticker">
+	<img src="img/stickers/persist.png" />
+</div>
+
+
+
+<audio id="sound">
+	<source type="audio/mp3" src="ping.mp3">
+</audio>
+
+
+
+</body>
+</html>
