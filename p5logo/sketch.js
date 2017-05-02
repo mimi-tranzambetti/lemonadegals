@@ -32,7 +32,7 @@ function setup() {
 function draw() {
     
 //	background(255,255,255,0); // transparent, so that it can be overlaid on website
-    image(img0, 500,500, 200,200);
+//    image(img0, 500,500, 200,200);
     
     //console.log(frameCount); // logs the frame count just to keep track
     
