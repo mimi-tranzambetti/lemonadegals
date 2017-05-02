@@ -38,9 +38,9 @@ var colorCheck = function () {
 
     }
 
-//load please
+    //load please
 
-    
+
 };
 
 document.querySelector("#pickerbutton").addEventListener("click", function () {
@@ -48,11 +48,17 @@ document.querySelector("#pickerbutton").addEventListener("click", function () {
     colorCheck();
     var choice = document.querySelector("#bannerlogo").src;
     Cookies.set("bannercolor", choice);
-//    alert("cookie = " + Cookies.get("bannercolor"));
+    //    alert("cookie = " + Cookies.get("bannercolor"));
 
 
 });
+//for (i = 0; i < banners.length; i++) {
+if (Cookies.get("bannercolor") == undefined) {
 
+    document.querySelector("#bannerlogo").src = "img/logonew.png";
 
+}
+
+//};
 var newcolor = Cookies.get("bannercolor");
 document.querySelector("#bannerlogo").src = newcolor;
