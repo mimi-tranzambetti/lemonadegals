@@ -48,7 +48,7 @@ document.querySelector("#pickerbutton").addEventListener("click", function () {
     colorCheck();
     var choice = document.querySelector("#bannerlogo").src;
     Cookies.set("bannercolor", choice);
-    alert("cookie = " + Cookies.get("bannercolor"));
+//    alert("cookie = " + Cookies.get("bannercolor"));
 
 
 });
