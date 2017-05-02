@@ -13,6 +13,12 @@ console.log(banners);
 //if(Cookies.get !=="nothing"){
 //document.querySelector("#bannerlogo").src = Cookies.get("bannercolor");
 //}
+if (Cookies.get("bannercolor") == undefined) {
+
+    document.querySelector("#bannerlogo").src = "img/logonew.png";
+
+}
+
 
 var colorCheck = function () {
 
@@ -53,11 +59,6 @@ document.querySelector("#pickerbutton").addEventListener("click", function () {
 
 });
 //for (i = 0; i < banners.length; i++) {
-if (Cookies.get("bannercolor") == undefined) {
-
-    document.querySelector("#bannerlogo").src = "img/logonew.png";
-
-}
 
 //};
 var newcolor = Cookies.get("bannercolor");
