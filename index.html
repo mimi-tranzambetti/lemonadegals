@@ -95,7 +95,13 @@
 <!--    <iframe allowTransparency="true" src="https://mimi-tranzambetti.github.io/lemonadegals/p5logo/index.html" width="100%" height="1000px" scrolling="no"></iframe>-->
     
     
-    
+    <script>
+        if (Cookies.get("bannercolor") == undefined) {
+
+    document.querySelector("#bannerlogo").src = "img/logonew.png";
+
+}
+    </script>
     <div class="header">
 
         <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo" id="bannerlogo"> </a>
