@@ -10,7 +10,9 @@ console.log(banners);
 //alert(document.querySelector("#bannerlogo").src);
 
 //document.querySelector("#bannerlogo").src = "img/logonew.png";
-document.querySelector("#bannerlogo").src = Cookies.get("bannercolor");
+//if(Cookies.get !=="nothing"){
+//document.querySelector("#bannerlogo").src = Cookies.get("bannercolor");
+//}
 
 var colorCheck = function () {
 
@@ -35,9 +37,7 @@ var colorCheck = function () {
         document.querySelector("#bannerlogo").src = banners[4];
 
     }
-var choice = document.querySelector("#bannerlogo").src;
-Cookies.set("bannercolor", choice);
-alert("cookie = " + Cookies.get("bannercolor"));
+
 
 
     
@@ -46,6 +46,10 @@ alert("cookie = " + Cookies.get("bannercolor"));
 document.querySelector("#pickerbutton").addEventListener("click", function () {
     //    alert(1);
     colorCheck();
+    var choice = document.querySelector("#bannerlogo").src;
+    Cookies.set("bannercolor", choice);
+    alert("cookie = " + Cookies.get("bannercolor"));
+
 
 });
 
