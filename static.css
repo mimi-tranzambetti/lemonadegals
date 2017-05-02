@@ -170,6 +170,7 @@ a {
 
 .footer {
     padding: 20px;
+    margin-bottom:0px;
     height: 80px;
     background-color: #222;
     color: #888;

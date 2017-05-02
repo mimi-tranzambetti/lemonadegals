@@ -15,10 +15,11 @@
 #splash1 {
     background: url('img/productshot/computerall.jpg') no-repeat center top;
     background-size: cover;
-    height: 750px;
-    background-attachment: fixed;
+    height: 800px;
+/*    background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom:0px;
 }
 
 #splash-quote-div {
