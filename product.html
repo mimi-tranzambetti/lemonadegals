@@ -2,65 +2,6 @@
 <html lang="en">
 
     <head>
-        <link rel=icon href="img/favicon.png">
-        
-        <meta charset="utf-8" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Lemonade Gals" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
-        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
-        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
-        <title>Lemonade Gals</title>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="static.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-       <!-- <script src="jquery.js"></script>  -->
-
-        <script>
-    $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
-          $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
-           $(".header").css("height", "25px");
-            $(".header").css("box-shadow", "10px 0px 10px gray");
-           $(".navlinks a").css("color", "#458989");
-            $(".navlinks a").css("margin", "0px 10px");
-            $(".logo").css("height", "30px");
-            $(".logo").css("float", "left");
-            $(".navbar").css("float", "right");
-            
-            
-        } else {
-          $(".header").css("background-color", "transparent");
-$(".header").css("box-shadow", "0px 0px 0px white");
-            $(".header").css("height", "50px");
-           $(".navlinks a").css("color", "white");
-            $(".navlinks a").css("margin", "15px 10px");
-            $(".logo").css("float", "left");
-            $(".logo").css("height", "50px");
-            $(".navbar").css("float", "right");
-        
-        }
-      });
-        
-
-        
-    });
-</script>
-        
-        
-    </head>
-    <body>
-   
-
-<head>
     <link rel=icon href="img/favicon.png">
 
     <meta charset="utf-8" />
@@ -112,17 +53,16 @@ $(".header").css("box-shadow", "0px 0px 0px white");
 
 
         });
-
     </script>
 
 
 </head>
 
 <body>
-    <div class="header">
 
-        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
 
+    <head>
+        <link rel=icon href="img/favicon.png">
 
         <div class="navbar">
             <div class="navlinks">
@@ -134,144 +74,225 @@ $(".header").css("box-shadow", "0px 0px 0px white");
         </div>
         <!--close navbar-->
 
-    </div>
-    <!--close header-->
 
-    <div class="splash" id="splash-about">
-        <div>
-            <br><br><br><br><br>
-            <div class="title">Our Stickers</div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Lemonade Gals" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
+        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
+        <title>Lemonade Gals</title>
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="static.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="dropzone.js"></script>
+        <script src="js.cookie.js"></script>
+        <!-- <script src="jquery.js"></script>  -->
+
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function() { // check if scroll event happened
+                    if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+                        $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
+                        $(".header").css("height", "25px");
+                        $(".header").css("box-shadow", "10px 0px 10px gray");
+                        $(".navlinks a").css("color", "#458989");
+                        $(".navlinks a").css("margin", "0px 10px");
+                        $(".logo").css("height", "30px");
+                        $(".logo").css("float", "left");
+                        $(".navbar").css("float", "right");
+
+
+                    } else {
+                        $(".header").css("background-color", "transparent");
+                        $(".header").css("box-shadow", "0px 0px 0px white");
+                        $(".header").css("height", "50px");
+                        $(".navlinks a").css("color", "white");
+                        $(".navlinks a").css("margin", "15px 10px");
+                        $(".logo").css("float", "left");
+                        $(".logo").css("height", "50px");
+                        $(".navbar").css("float", "right");
+
+                    }
+                });
+
+
+
+            });
+        </script>
+
+
+    </head>
+
+    <body>
+        
+        <div class="header">
+
+            <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+<script>
+
+            <div class="navbar">
+                <div class="navlinks">
+                    <a href="about.html">About</a>
+                    <a href="product.html" class="current">Shop</a>
+                    <a href="breakdown.html">Breakdown</a>
+                </div>
+            </div>
+
+
         </div>
-        <div>&nbsp;</div>
-    </div>
-    <!--close splash-->
+      
 
-
-    <div class="container" style="background-color: #fffef9;">
-        <br> <br>
-        <h1>The Classic Collection</h1>
-
-    </div>
-    <div class="container">
-        <h1></h1>
-        <div class="gallery">
-
+        <div class="splash" id="splash-about">
             <div>
-                <a href="dump.html"> <img src="img/dump-trump.png" class="sticker" id="dumphover"> </a>
-                <h3>Dump Trump</h3>
+                <br><br><br><br><br>
+                <div class="title">Our Stickers</div>
             </div>
-            <div>
-                <a href="duck.html"> <img src="img/duck-frump.png" class="sticker" id="frumphover"> </a>
-                <h3>Duck Frump</h3>
-            </div>
-            <div>
-                <a href="persist.html"> <img src="img/she-persisted.png" class="sticker" id="persisthover"> </a>
-                <h3>Elizabeth Warren</h3>
-            </div>
+            <div>&nbsp;</div>
         </div>
-        <div class="gallery">
-            <div>
-                <a href="please.html"> <img src="img/bitch-please.png" class="sticker" id="pleasehover"> </a>
-                <h3>*****, Please</h3>
-            </div>
-            <div>
-                <a href="alt.html"> <img src="img/alt-trump.png" class="sticker" id="althover"> </a>
-                <h3>Alternative Trump</h3>
-            </div>
-            <div>
-                <a href="suggestions.html"> <img src="img/more.jpg" class="sticker" id="suggesthover"> </a>
-                <h3> Give Us Suggestions </h3>
-            </div>
+
+
+
+        <div class="container" style="background-color: #fffef9;">
+            <br> <br>
+            <h1>The Classic Collection</h1>
+
         </div>
-    </div>
-    <!--close img gallery-->
-    <!--close product showcase div-->
+        <div class="container">
+            <h1></h1>
+            <div class="gallery">
 
-    <!-- Javascript Hover Attempt -->
-    <script>
-        document.querySelector("#dumphover").addEventListener("mouseover", function() {
-            document.querySelector("#dumphover").src = "img/squarephoto/dump.jpg";
-        });
-        document.querySelector("#dumphover").addEventListener("mouseout", function() {
-            document.querySelector("#dumphover").src = "img/dump-trump.png";
-        });
+                <div>
+                    <a href="dump.html"> <img src="img/dump-trump.png" class="sticker" id="dumphover"> </a>
+                    <h3>Dump Trump</h3>
+                </div>
+                <div>
+                    <a href="duck.html"> <img src="img/duck-frump.png" class="sticker" id="frumphover"> </a>
+                    <h3>Duck Frump</h3>
+                </div>
+                <div>
+                    <a href="persist.html"> <img src="img/she-persisted.png" class="sticker" id="persisthover"> </a>
+                    <h3>Elizabeth Warren</h3>
+                </div>
+            </div>
+            <div class="gallery">
+                <div>
+                    <a href="please.html"> <img src="img/bitch-please.png" class="sticker" id="pleasehover"> </a>
+                    <h3>*****, Please</h3>
+                </div>
+                <div>
+                    <a href="alt.html"> <img src="img/alt-trump.png" class="sticker" id="althover"> </a>
+                    <h3>Alternative Trump</h3>
+                </div>
+                <div>
+                    <a href="suggestions.html"> <img src="img/more.jpg" class="sticker" id="suggesthover"> </a>
+                    <h3> Give Us Suggestions </h3>
+                </div>
+            </div>
 
-        document.querySelector("#frumphover").addEventListener("mouseover", function() {
-            document.querySelector("#frumphover").src = "img/squarephoto/duck.jpg";
-        });
-        document.querySelector("#frumphover").addEventListener("mouseout", function() {
-            document.querySelector("#frumphover").src = "img/duck-frump.png";
-        });
+        </div>
+//        <!--
+//        <div id="form"> 
+//            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJy3K8-rSP_K7pvD3SoSwD6IlTHxXOPsfWlfwfiDko3nanOQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+//        </div>
+//-->
+       
+        <script>
+            document.querySelector("#dumphover").addEventListener("mouseover", function() {
+                document.querySelector("#dumphover").src = "img/squarephoto/dump.jpg";
+            });
+            document.querySelector("#dumphover").addEventListener("mouseout", function() {
+                document.querySelector("#dumphover").src = "img/dump-trump.png";
+            });
 
-        document.querySelector("#persisthover").addEventListener("mouseover", function() {
-            document.querySelector("#persisthover").src = "img/squarephoto/persist.jpg";
-        });
-        document.querySelector("#persisthover").addEventListener("mouseout", function() {
-            document.querySelector("#persisthover").src = "img/she-persisted.png";
-        });
+            document.querySelector("#frumphover").addEventListener("mouseover", function() {
+                document.querySelector("#frumphover").src = "img/squarephoto/duck.jpg";
+            });
+            document.querySelector("#frumphover").addEventListener("mouseout", function() {
+                document.querySelector("#frumphover").src = "img/duck-frump.png";
+            });
 
-        document.querySelector("#pleasehover").addEventListener("mouseover", function() {
-            document.querySelector("#pleasehover").src = "img/squarephoto/please.jpg";
-        });
-        document.querySelector("#pleasehover").addEventListener("mouseout", function() {
-            document.querySelector("#pleasehover").src = "img/bitch-please.png";
-        });
+            document.querySelector("#persisthover").addEventListener("mouseover", function() {
+                document.querySelector("#persisthover").src = "img/squarephoto/persist.jpg";
+            });
+            document.querySelector("#persisthover").addEventListener("mouseout", function() {
+                document.querySelector("#persisthover").src = "img/she-persisted.png";
+            });
 
-        document.querySelector("#althover").addEventListener("mouseover", function() {
-            document.querySelector("#althover").src = "img/squarephoto/alt.jpg";
-        });
-        document.querySelector("#althover").addEventListener("mouseout", function() {
-            document.querySelector("#althover").src = "img/alt-trump.png";
-        });
+            document.querySelector("#pleasehover").addEventListener("mouseover", function() {
+                document.querySelector("#pleasehover").src = "img/squarephoto/please.jpg";
+            });
+            document.querySelector("#pleasehover").addEventListener("mouseout", function() {
+                document.querySelector("#pleasehover").src = "img/bitch-please.png";
+            });
 
-    </script>
+            document.querySelector("#althover").addEventListener("mouseover", function() {
+                document.querySelector("#althover").src = "img/squarephoto/alt.jpg";
+            });
+            document.querySelector("#althover").addEventListener("mouseout", function() {
+                document.querySelector("#althover").src = "img/alt-trump.png";
+            });
+        </script>
 
-    <!-- <div class="container" style="background-color: #ffffef;"> 
+        <!-- <div class="container" style="background-color: #ffffef;"> 
         <h1>Custom Requests</h1>
         <p>We take custom requests- we can vector any photo or artwork and deliver it to you as a full sheet of anywhere up to 10 stickers. Check out some of our samples below:</p>
         </div> -->
 
 
 
-    <!--close splash-->
+        <!--close splash-->
 
-    <div class="container" style="background-color: #98dbd9; height: 500px;">
-        <!-- background: url('img/productshot/windowh.jpg') no-repeat; background-size: cover; background-position: 100% 80%; height: 800px -->
+        <div class="container" style="background-color: #98dbd9; height: 500px;" id="customform">
+            <!-- background: url('img/productshot/windowh.jpg') no-repeat; background-size: cover; background-position: 100% 80%; height: 800px -->
 
-        <div style="background-color: RG BA(250,250,250,0.6); padding-top: 5%; padding-bottom: 23%; ">
-            <br>
-            <h1 style="padding-top:2%; color: white;">Custom Requests</h1>
-            <p style="font-size: 18pt; padding-right: 20%; padding-left:20%;">We take custom requests- we can vector any photo or artwork and deliver it to you as a full sheet of anywhere up to 10 stickers.</p> <br>
-            <h3>Interested? Reach out to us on Facebook or Instagram to get your sticker today!</h3>
+            <div style="background-color: RG BA(250,250,250,0.6); padding-top: 1%; padding-bottom: 23%; ">
+                <br>
+                <h1 style="padding-top:0%; color: white;">Custom Requests</h1>
+
+                <p style="font-size: 10pt; padding-right: 20%; padding-left:20%;">We take custom requests- we can vector any photo or artwork and deliver it to you as a full sheet of anywhere up to 10 stickers.</p> <br>
+                <div id="describe">
+                    <p><strong>Describe what you want your sticker to look like:</strong></p>
+                    <textarea name="description" id="description"></textarea><br> Size:
+                    <input type="text" class="inchbox"> x
+                    <input type="text" class="inchbox"> inches<br> # of Sheets: <input type="text" id="sheetnumb" class="inchbox"><br> Price Estimate:
+                </div>
+                <form action="/file-upload" class="dropzone" id="filedrop"></form>
+                <!--            <h3>Interested? Reach out to us on Facebook or Instagram to get your sticker today!</h3>-->
+            </div>
+
+            <div class="gallery">
+
+
+            </div>
+            <!--close img gallery-->
+
+        </div>
+        <!--close product showcase div-->
+
+
+
+        <!--contact div-->
+
+        <div class="footer">
+            <div class="media-links">
+                <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+                <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
+            </div>
+
+
+            <p>© 2017 - LEMONADE GALS</p>
         </div>
 
-        <div class="gallery">
+        <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
+        <!--private side lemons-->
 
-
-        </div>
-        <!--close img gallery-->
-
-    </div>
-    <!--close product showcase div-->
-
-
-
-    <!--contact div-->
-
-    <div class="footer">
-        <div class="media-links">
-            <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
-            <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
-        </div>
-
-
-        <p>© 2017 - LEMONADE GALS</p>
-    </div>
-
-    <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
-    <!--private side lemons-->
-
-</body>
-<!--close body-->
+    </body>
+    <!--close body-->
 
 </html>

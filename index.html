@@ -2,29 +2,22 @@
 <html lang="en">
 
     <head>
-        <link rel=icon href="img/favicon.png">
         
-        <meta charset="utf-8" />
+<!--        <script src="http://webdev.usc.edu/jqm.js"></script>-->
+<!--<script src="http://webdev.usc.edu/jqui.min.js"></script>-->
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Lemonade Gals" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
-        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
-        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
-        <title>Lemonade Gals</title>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="static.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        
-       
 
-<head>
+          </head> 
+
+        <script language="javascript" type="text/javascript" src="p5logo/sketch.js"></script>
+        
+     
+            
+        </script>
+
+
+<!--<head>-->
     <link rel=icon href="img/favicon.png">
 
     <meta charset="utf-8" />
@@ -43,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
 
     <script>
         $(document).ready(function() {
@@ -79,32 +72,68 @@
         });
 
     </script>
+<!--
 
-
+<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+-->
+<!--   <canvas id="defaultCanvas0" width="673" height="100%" style="width: 336.8px; height: 1000px;"></canvas> -->
 </head>
 
 <body>
+    
+<!--    <div id="sketch"> -->
+    
+    <iframe allowTransparency="true" src="https://mimi-tranzambetti.github.io/lemonadegals/p5logo/index.html" width="100%" height="100%" scrolling="no"></iframe>
+    
     <div class="header">
 
-        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo" id="bannerlogo"> </a>
+<!--
 
+			<input type="radio" name="bannercolor" id="tealbutton">Teal
+			<input type="radio" name="bannercolor" id="bluebutton">Blue
+			<input type="radio" name="bannercolor">Orange
+            <input type="radio" name="bannercolor">Pink
+			<input type="radio" name="bannercolor">Purple
+-->
+        <div id="pickerdivhelp"> 
+<select id="colorpicker">
+    <option>Teal</option> 
+    <option>Blue</option>
+    <option>Orange</option>
+    <option>Pink</option>
+    <option>Purple</option>
+</select>
+        <input type="button" id="pickerbutton" value="Set Banner Color">
+        
+         <script src="banner.js"></script>       
+        </div>
+        
         <div class="navbar">
             <div class="navlinks">
                 <a href="about.html">About</a>
                 <a href="product.html">Shop</a>
+
+<!--
                 <a href="breakdown.html">Breakdown</a>
                 <a href="animation.html">Animation</a>
+-->
+
                 
 <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <button class="dropbtn">More</button>
   <div class="dropdown-content">
     <a href="chart.html">Financial Chart</a>
     <a href="Gallery/index.html">Photo Gallery</a>
-    <a href="presentation.html">Presentation</a>
+      <a href="breakdown.html">Breakdown</a>
+
+                <a href="animation.html">Animation</a>
+<!--    <a href="presentation.html">Presentation</a>-->
   </div>
     
     
 </div>
+
     
             </div>
         </div>
@@ -116,7 +145,7 @@
     <div id="splash1" class="splash" class="parallax">
         <div id="splash-quote-div" style="margin-top: 120px; float: left;">
             <div class="title" id="splash-quote">We're putting sweet spins on sour situations</div>
-            <a href="product.html" class="button">Explore</a>
+            <a href="product.html" class="button" class="explorebttn">Explore</a>
         </div>
         <div>&nbsp;</div>
     </div>
@@ -125,7 +154,7 @@
     <div id="splash2" class="splash">
         <div id="splash2-quote-div" style=" float: right;">
             <div class="title" id="splash-quote">Shop Our Collection</div>
-            <a href="product.html" class="button">Explore</a>
+            <a href="product.html" class="button" class="explorebttn">Explore</a>
         </div>
         <div>&nbsp;</div>
     </div>
@@ -146,8 +175,39 @@
 
     <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
     <!--private side lemons-->
+<<<<<<< HEAD
+<!--</div>-->
+=======
 
+    
+    
+>>>>>>> origin/master
 </body>
+    
+    
+    
+    
+<!--
+    <script>
+var banners = [];
+banners.push("img/logonew.png");
+banners.push("img/logonewblue.png");
+banners.push("img/logoneworange.png");
+banners.push("img/logonewpink.png");
+banners.push("img/logonewpurp.png");
+console.log(banners);
+
+var teal = document.querySelector("#tealbutton");
+var blue = document.querySelector("#bluebutton");
+    
+if(teal.checked==true){
+    document.querySelector("#bannerlogo").src = banners[0];
+}
+if(blue.checked==true){
+    document.querySelector("#bannerlogo").src = banners[1];
+}  
+    </script>
+-->
 <!--close body-->
 
-</html>
+    </html>
