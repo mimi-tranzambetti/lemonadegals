@@ -6,6 +6,15 @@
         <script src="http://webdev.usc.edu/jqm.js"></script>
 <script src="http://webdev.usc.edu/jqui.min.js"></script>
         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+    <link rel="stylesheet" type="text/css" href="p5logo/sketch.css" />
+    <script src="p5logo/p5.min.js"></script>
+    <script src="p5logo/p5.sound.js"></script>
+    <script src="p5logo/sketch.js"></script>
+-->
+        
+<!--
         <link rel=icon href="img/favicon.png">
         
         <meta charset="utf-8" />
@@ -25,85 +34,14 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+-->
         
         <script language="javascript" type="text/javascript" src="p5logo/sketch.js"></script>
         
        
-        <script>
-        var play = function() {     
-   
-    
-    $(document).delay(2100).queue(function(){
-        $("#hit").trigger("play");
-    })
-    
-    
-        $("#mario img").attr("src", "MarioSpriteTest.gif");
-        $("#mario").css({top:"750px"});
-    
-    /* $("#racer2 img").attr("src", "http://webdev.usc.edu/acad275/lecture_examples/sonic_racing.gif");
-	*/
-    $("#explorebttn").
-    animate({
-        "left" :"500px"
-    }, 6000). 
-    
-      animate({
-        "left":"520px", "top":"600px"
-    }, function(){
-         
-        $("#mario img").attr("src", 
-            "MarioSpriteTestbig.gif" );
-        $("#power").trigger("play"); 
-    }).
-    
-    animate({
-        "left":"800px"
-    }, 3000).
-    
-    
-    animate({
-       "left":"3500px"
-   
-    },3000)
        
-    
-     $("#box").
-     delay(2100). 
-    animate({
-        "top":"690px",
-     }, 400).
-     animate({
-        "top":"780px",
-     },200)
-    
-    $("#shroom").
-     delay(2200). 
-    animate({
-        "top":"670px",
-     }, 400).
-    animate({
-        "left":"400px",
-    "top":"850px",
-     }, 1000).
-     animate({
-        "left":"600px",
-     },3000)
-    
-    
-}
-        
-        $(document).ready(function(){
 
-	$("#explorebttn").on("click", function(){ // user clicks on start pistol graphic
-		play();					
-	});
-
-});
-            
-        </script>
-
-<head>
+<!--<head>-->
     <link rel=icon href="img/favicon.png">
 
     <meta charset="utf-8" />
@@ -158,11 +96,19 @@
         });
 
     </script>
+<!--
 
-
+<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+-->
+<!--   <canvas id="defaultCanvas0" width="673" height="100%" style="width: 336.8px; height: 1000px;"></canvas> -->
 </head>
 
 <body>
+    
+<!--    <div id="sketch"> -->
+    
+<!--    <iframe allowTransparency="true" src="https://mimi-tranzambetti.github.io/lemonadegals/p5logo/index.html" width="100%" height="100%" scrolling="no"></iframe>-->
+    
     <div class="header">
 
         <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
@@ -233,7 +179,7 @@
 
     <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
     <!--private side lemons-->
-
+<!--</div>-->
 </body>
 <!--close body-->
 

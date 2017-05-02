@@ -4,13 +4,13 @@ var stickercount = 70; // makes 70 random stickers appear
 
 function preload() { // loads the stickers into the system, to be used later
     
-    img0 = loadImage ("banner.png"); // logo 
+    img0 = loadImage ("p5logo/banner.png"); // logo 
     
-    img1 = loadImage("duckie.png"); // duck frump
-    img2 = loadImage ("carrot.png"); // alt trump 
-    img3 = loadImage ("doggie.png"); // bitch pls
-    img4 = loadImage ("dump.png"); // dump trump 
-    img5 = loadImage ("she.png"); // nevertheless 
+    img1 = loadImage("p5logo/duckie.png"); // duck frump
+    img2 = loadImage ("p5logo/carrot.png"); // alt trump 
+    img3 = loadImage ("p5logo/doggie.png"); // bitch pls
+    img4 = loadImage ("p5logo/dump.png"); // dump trump 
+    img5 = loadImage ("p5logo/she.png"); // nevertheless 
     }
 
 function setup() { 
@@ -57,5 +57,9 @@ function Burst() {
 
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
+}
+
+function mousePressed() {
+  remove(); // remove whole sketch on mouse press
 }
  
