@@ -1,0 +1,277 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    
+   <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<div id="chartdiv"></div>													 <title>Chart</title>
+    
+<style>
+   #chartdiv {
+	width	: 100%;
+	height	: 500px;
+}													
+}																	
+    
+    </style>
+    
+    <script>
+  var chart = AmCharts.makeChart("chartdiv", {
+        "type": "serial",
+        "theme": "none",
+      "legend": {
+        "useGraphSettings": true
+      },
+        "pathToImages": "http://www.amcharts.com/lib/3/images/",
+        "dataDateFormat": "YYYY-MM-DD",
+        "valueAxes": [{
+            "id":"v1",
+            "axisAlpha": 0,
+            "position": "left"
+        }],
+        "graphs": [{
+			"id": "g1",
+            "bullet": "round",
+            "bulletBorderAlpha": 1,
+            "bulletColor": "#FFFFFF",
+            "bulletSize": 5,
+            "hideBulletsCount": 50,
+            "lineThickness": 3,
+            "title": "Revenue",
+            "useLineColorForBulletBorder": true,
+            "valueField": "value"
+        },
+                  {
+			"id": "g2",
+            "bullet": "square",
+            "bulletBorderAlpha": 1,
+            "bulletColor": "#FFFFFF",
+            "bulletSize": 8,
+            "hideBulletsCount": 50,
+            "lineThickness": 3,
+            "title": "Gross Profit",
+            "useLineColorForBulletBorder": true,
+            "valueField": "value2"
+        },
+                    {
+			"id": "g3",
+            "bullet": "triangleUp",
+            "bulletBorderAlpha": 1,
+            "bulletColor": "rgba(255,255,255,0.3)",
+            "bulletSize": 1,
+            "hideBulletsCount": 50,
+            "lineThickness": 1,
+            "title": "Operating Profit",
+            "useLineColorForBulletBorder": true,
+            "valueField": "value3"
+        }
+                  
+                  
+                  ],
+        "chartScrollbar": {
+			"graph": "g1",
+			"scrollbarHeight": 30
+		},
+        "chartCursor": {
+            "cursorPosition": "mouse",
+            "pan": true,
+             "valueLineEnabled":true,
+             "valueLineBalloonEnabled":true
+        },
+        "categoryField": "date",
+        "categoryAxis": {
+            "parseDates": true,
+            "dashLength": 1,
+            "minorGridEnabled": true,
+            "position": "top"
+        },
+//        exportConfig:{
+//          menuRight: '20px',
+//          menuBottom: '50px',
+//          menuItems: [{
+//          icon: 'http://www.amcharts.com/lib/3/images/export.png',
+//          format: 'png'	  
+//          }]  
+//        },
+        "dataProvider": [{
+            "date": "2017-03-26",
+            "value": 0,
+            "value2": -5,
+            "value3":0
+        }, {
+            "date": "2017-04-02",
+            "value": 85,
+            "value2": 42.56,
+            "value3":  42.56
+        }, {
+            "date": "2017-04-09",
+            "value": 127.5,
+            "value2": 83.87,
+            "value3":83.87
+        }, {
+            "date": "2017-04-16",
+            "value": 180,
+            "value2": 93.85,
+            "value3":93.85
+        }, {
+            "date": "2017-04-23",
+            "value": 548,
+            "value2": 432.98,
+            "value3":432.98
+        }, {
+            "date": "2017-04-30",
+            "value": 612,
+            "value2": 490.48,
+            "value3":490.48
+        }, {
+            "date": "2017-05-07",
+            "value": 644,
+            "value2": 493.91,
+            "value3": 493.91
+        }, {
+            "date": "2017-05-14",
+            "value": 665,
+            "value2": 513.72,
+            "value3": 513.72
+        }, {
+            "date": "2017-05-21",
+            "value": 679,
+            "value2": 527.72,
+            "value3": 527.72
+        }, {
+            "date": "2017-05-28",
+            "value": 695,
+            "value2": 543.72,
+            "value3": 543.72
+        }, {
+            "date": "2017-06-04",
+            "value": 708,
+            "value2": 523.52,
+            "value3": 523.52
+        }, {
+            "date": "2017-06-11",
+            "value": 722,
+            "value2": 537.52,
+            "value3": 537.52
+        }, {
+            "date": "2017-06-18",
+            "value": 741,
+            "value2": 556.52,
+            "value3": 556.52
+        }, {
+            "date": "2017-06-25",
+            "value": 752,
+            "value2": 567.52,
+            "value3": 567.52
+        }, {
+            "date": "2017-07-02",
+            "value": 765.5,
+            "value2": 581.02,
+            "value3": 581.02
+        }, {
+            "date": "2017-07-09",
+            "value": 780.5,
+            "value2": 596.52,
+            "value3": 596.52
+        }, {
+            "date": "2017-07-16",
+            "value": 791.5,
+            "value2": 603.82,
+            "value3": 603.82
+        }, {
+            "date": "2017-07-23",
+            "value": 805.5,
+            "value2": 617.82,
+            "value3": 617.82
+        }, {
+            "date": "2017-07-30",
+            "value": 817.5,
+            "value2": 599.14,
+            "value3": 599.14
+        }, {
+            "date": "2017-08-06",
+            "value": 847.5,
+            "value2": 629.14,
+            "value3": 629.14
+        }, {
+            "date": "2017-08-13",
+            "value": 1147.5,
+            "value2": 848.07,
+            "value3": 848.07
+        }, {
+            "date": "2017-08-20",
+            "value": 1497.5,
+            "value2": 1102.21,
+            "value3": 1102.21
+        }, {
+            "date": "2017-08-27",
+            "value": 1747.5,
+            "value2": 1290.83,
+            "value3": 1290.83
+        }, {
+            "date": "2017-09-03",
+            "value": 1847.5,
+            "value2": 1380.83,
+            "value3": 1380.83
+        }, {
+            "date": "2017-09-10",
+            "value": 1887.5,
+            "value2": 1417.63,
+            "value3": 1417.63
+        }, {
+            "date": "2017-09-17",
+            "value": 1919.5,
+            "value2": 1448.44,
+            "value3": 1448.44
+        }, {
+            "date": "2017-09-24",
+            "value": 1949.5,
+            "value2": 1465.75,
+            "value3": 1465.75
+        }, {
+            "date": "2017-10-01",
+            "value": 1970,
+            "value2": 1485.06,
+            "value3": 1485.06
+        }, {
+            "date": "2017-10-08",
+            "value": 1996,
+            "value2": 1509.87,
+            "value3": 1509.87
+        }, {
+            "date": "2017-10-15",
+            "value": 2026,
+            "value2": 1527.18,
+            "value3": 1527.18
+        }, {
+            "date": "2017-10-22",
+            "value": 2087,
+            "value2": 1578.18,
+            "value3": 1578.18
+        }, {
+            "date": "2017-10-29",
+            "value": 2121,
+            "value2": 1605.78,
+            "value3":  1605.78
+        }]
+    }
+);
+
+chart.addListener("rendered", zoomChart);
+
+zoomChart();
+function zoomChart(){
+    chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1);
+    chart.zoomToIndexes(0, 20);
+}
+    </script>
+    
+<body>
+    
+    <p style="font-size:16pt; text-align: center; font-family: 'Fredoka One', sans-serif; color: grey;"> Initial Sales began on April 2nd and ended April 30th. <br> <br> All following data is based off of projected sales. <br> <br> Lemonade Gals do not have additional operating expenses, resulting in the numbers matching the data of gross profit. </p> <br> <br>
+    <a href="index.html" style="font-size:12pt; display:block; margin: auto; text-align: center; text-decoration: none; font-family: 'Fredoka One', sans-serif; color: #458989; border: 2px solid #458989; width: 80px; padding: 10px; border-radius: 5px;"> Home </a>
+    </body>
+
+</head>
