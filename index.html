@@ -34,12 +34,58 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<<<<<<< HEAD
 -->
+=======
+
+>>>>>>> origin/master
         
+<<<<<<< HEAD
+          </head> 
+=======
         <script language="javascript" type="text/javascript" src="p5logo/sketch.js"></script>
         
        
        
+<<<<<<< HEAD
+=======
+    
+     $("#box").
+     delay(2100). 
+    animate({
+        "top":"690px",
+     }, 400).
+     animate({
+        "top":"780px",
+     },200)
+    
+    $("#shroom").
+     delay(2200). 
+    animate({
+        "top":"670px",
+     }, 400).
+    animate({
+        "left":"400px",
+    "top":"850px",
+     }, 1000).
+     animate({
+        "left":"600px",
+     },3000)
+    
+    
+}
+        
+        $(document).ready(function(){
+
+	$("#explorebttn").on("click", function(){ // user clicks on start pistol graphic
+		play();					
+	});
+
+});
+            
+        </script>
+>>>>>>> origin/master
+>>>>>>> origin/master
 
 <!--<head>-->
     <link rel=icon href="img/favicon.png">
@@ -111,8 +157,26 @@
     
     <div class="header">
 
-        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo" id="bannerlogo"> </a>
+<!--
 
+			<input type="radio" name="bannercolor" id="tealbutton">Teal
+			<input type="radio" name="bannercolor" id="bluebutton">Blue
+			<input type="radio" name="bannercolor">Orange
+            <input type="radio" name="bannercolor">Pink
+			<input type="radio" name="bannercolor">Purple
+-->
+<select id="colorpicker">
+    <option>Teal</option> 
+    <option>Blue</option>
+    <option>Orange</option>
+    <option>Pink</option>
+    <option>Purple</option>
+</select>
+        <input type="button" id="pickerbutton" value="Set Banner Color">
+        
+         <script src="banner.js"></script>       
+        
         <div class="navbar">
             <div class="navlinks">
                 <a href="about.html">About</a>
@@ -179,8 +243,39 @@
 
     <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
     <!--private side lemons-->
+<<<<<<< HEAD
 <!--</div>-->
+=======
+
+    
+    
+>>>>>>> origin/master
 </body>
+    
+    
+    
+    
+<!--
+    <script>
+var banners = [];
+banners.push("img/logonew.png");
+banners.push("img/logonewblue.png");
+banners.push("img/logoneworange.png");
+banners.push("img/logonewpink.png");
+banners.push("img/logonewpurp.png");
+console.log(banners);
+
+var teal = document.querySelector("#tealbutton");
+var blue = document.querySelector("#bluebutton");
+    
+if(teal.checked==true){
+    document.querySelector("#bannerlogo").src = banners[0];
+}
+if(blue.checked==true){
+    document.querySelector("#bannerlogo").src = banners[1];
+}  
+    </script>
+-->
 <!--close body-->
 
-</html>
+    </html>
