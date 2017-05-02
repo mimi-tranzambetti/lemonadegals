@@ -38,8 +38,7 @@ var colorCheck = function () {
 Cookies.set("bannercolor", choice);
 alert("cookie = " + Cookies.get("bannercolor"));
 
-var newcolor = Cookies.get("bannercolor");
-document.querySelector("#bannerlogo").src = newcolor;
+
     
 };
 
@@ -50,3 +49,5 @@ document.querySelector("#pickerbutton").addEventListener("click", function () {
 });
 
 
+var newcolor = Cookies.get("bannercolor");
+document.querySelector("#bannerlogo").src = newcolor;
