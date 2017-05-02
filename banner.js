@@ -38,7 +38,7 @@ var colorCheck = function () {
 
     }
 
-
+//load please
 
     
 };
