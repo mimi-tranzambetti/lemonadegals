@@ -1,143 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel=icon href="img/favicon.png">
-        
-        <meta charset="utf-8" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Lemonade Gals" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
-        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
-        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
-        <title>Lemonade Gals</title>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="static.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-       <!-- <script src="jquery.js"></script>  -->
+    <link rel=icon href="img/favicon.png">
 
-        <script>
-    $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
-          $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
-           $(".header").css("height", "25px");
-            $(".header").css("box-shadow", "10px 0px 10px gray");
-           $(".navlinks a").css("color", "#458989");
-            $(".navlinks a").css("margin", "0px 10px");
-            $(".logo").css("height", "30px");
-            $(".logo").css("float", "left");
-            $(".navbar").css("float", "right");
-            
-            
-        } else {
-          $(".header").css("background-color", "transparent");
-$(".header").css("box-shadow", "0px 0px 0px white");
-            $(".header").css("height", "50px");
-           $(".navlinks a").css("color", "white");
-            $(".navlinks a").css("margin", "15px 10px");
-            $(".logo").css("float", "left");
-            $(".logo").css("height", "50px");
-            $(".navbar").css("float", "right");
-        
-        }
-      });
-        
+    <meta charset="utf-8" />
 
-        
-    });
-</script>
-        
-        
-    </head>
-    <body>
-        <div class="header">
-            
-            <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
-            
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lemonade Gals" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+    <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
+    <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
+    <title>Lemonade Gals</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!--            <script src="img/js.cookie.js"></script>-->
+    <script src="order.js"></script>
+    <script src="js.cookie.js"></script>
+
+    <!-- <script src="jquery.js"></script>  -->
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+                    $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
+                    $(".header").css("height", "25px");
+                    $(".header").css("box-shadow", "10px 0px 10px gray");
+                    $(".navlinks a").css("color", "#458989");
+                    $(".navlinks a").css("margin", "0px 10px");
+                    $(".logo").css("height", "30px");
+                    $(".logo").css("float", "left");
+                    $(".navbar").css("float", "right");
+
+
+                } else {
+                    $(".header").css("background-color", "transparent");
+                    $(".header").css("box-shadow", "0px 0px 0px white");
+                    $(".header").css("height", "50px");
+                    $(".navlinks a").css("color", "white");
+                    $(".navlinks a").css("margin", "15px 10px");
+                    $(".logo").css("float", "left");
+                    $(".logo").css("height", "50px");
+                    $(".navbar").css("float", "right");
+
+                }
+            });
+
+
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+
         <div class="navbar">
             <div class="navlinks">
-              <a href="about.html" >About</a>
-              <a href="product.html" class="current">Shop</a>
-              <a href="breakdown.html">Breakdown</a>
+                <a href="about.html">About</a>
+                <a href="product.html" class="current">Shop</a>
+                <a href="breakdown.html">Breakdown</a>
             </div>
-        </div> <!--close navbar-->
-            
-        </div> <!--close header-->
-        
-        <div class="splash" id="splash-about">
-            <div>
+        </div>
+        <!--close navbar-->
+
+    </div>
+    <!--close header-->
+
+    <div class="splash" id="splash-about">
+        <div>
             <br><br><br><br><br>
             <div class="title">Our Stickers</div>
-            </div>
+        </div>
         <div>&nbsp;</div>
-        </div> <!--close splash--> 
-        
-        
-        
-        <div class="container">  </div>
-            <br> <br>
+    </div>
+    <!--close splash-->
 
-            
-        <div id="productleft"> <img src="img/duck-frump.png" class="productsticker" id="dump1"> 
-            
-            <div id="thumbnails">
+    <aside>
+        <h2>Order Summary</h2>
+        <hr>
+        <span id="total">Total: $0.00</span>
+    </aside>
+    <!-- CLOSE ASIDE/RECEIPT DIV-->
 
-  <img src="img/squarephoto/duck.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump2" />                                                                    
-<img src="img/squarephoto/duckcomp.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump3" />
-<img src="img/squarephoto/waterbottle.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump4" />
-    <img src="img/duck-frump.png" width="70px" height="70px" border="0" class="thumbnail" id="dump5" />
-  
-  
+    <div class="container"> </div>
+    <br> <br>
 
 
-   <br style="clear:both;">
-  
-  </div> 
-            
-            </div>    
-       
-            
-            
+    <div id="productleft"> <img src="img/duck-frump.png" class="productsticker" id="dump1">
 
-             <script>
-                  $(document).ready(function(){
-                 //slideshow 
-                 
-$("#dump2").click(function(){
-		$("#dump1").hide()
-		$("#dump1").attr("src","img/squarephoto/duck.jpg").fadeIn();
-   });
-                      
-                      $("#dump3").click(function(){
-		$("#dump1").hide()
-		$("#dump1").attr("src","img/squarephoto/duckcomp.jpg").fadeIn();
-   });
-                      
-                      $("#dump4").click(function(){
-		$("#dump1").hide()
-		$("#dump1").attr("src","img/squarephoto/waterbottle.jpg").fadeIn();
-   });
-                      
-                      $("#dump5").click(function(){
-		$("#dump1").hide()
-		$("#dump1").attr("src","img/duck-frump.png").fadeIn();
-   });
-                      
-                  });
+        <div id="thumbnails">
 
-        </script>
-            
-            
-            <h1 > DUCK FRUMP </h1>
-            <div id="form">
-            
+            <img src="img/squarephoto/duck.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump2" />
+            <img src="img/squarephoto/duckcomp.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump3" />
+            <img src="img/squarephoto/waterbottle.jpg" width="70px" height="70px" border="0" class="thumbnail" id="dump4" />
+            <img src="img/duck-frump.png" width="70px" height="70px" border="0" class="thumbnail" id="dump5" />
+
+
+
+
+            <br style="clear:both;">
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            //slideshow 
+
+            $("#dump2").click(function() {
+                $("#dump1").hide()
+                $("#dump1").attr("src", "img/squarephoto/duck.jpg").fadeIn();
+            });
+
+            $("#dump3").click(function() {
+                $("#dump1").hide()
+                $("#dump1").attr("src", "img/squarephoto/duckcomp.jpg").fadeIn();
+            });
+
+            $("#dump4").click(function() {
+                $("#dump1").hide()
+                $("#dump1").attr("src", "img/squarephoto/waterbottle.jpg").fadeIn();
+            });
+
+            $("#dump5").click(function() {
+                $("#dump1").hide()
+                $("#dump1").attr("src", "img/duck-frump.png").fadeIn();
+            });
+
+        });
+    </script>
+
+
+    <h1> DUCK FRUMP </h1>
+    <h6>*click and drag your selection(s) onto the laptop to add to cart*</h6>
+    <div id="form">
+        <h4>Small $1</h4>
+        <img draggable="true" ondragstart="drag(event)" src="/img/ducksticker.png" class="stickSmall" id="smallDuck">
+        <h4>Large $2</h4>
+        <img draggable="true" ondragstart="drag1(event)" src="/img/ducksticker.png" class="stickLarge">
+
+
+
+
+
+
+        <!--
             <form>
                 
                 
@@ -158,28 +181,46 @@ $("#dump2").click(function(){
                 <input type="reset" id="reset" value="Start Over">
  
             </form>
+-->
 
-        
-        </div> <!--close img gallery-->
-        <!--close product showcase div-->
+        <!--<div id="message1" style="visibility:hidden;">You added a small duck frump</div>-->
+    </div>
+    <!--close img gallery-->
+    <!--close product showcase div-->
+    <div id="cartdiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
-        
-        
-      
-         <!--contact div-->
-         <br style="clear:both;" />
-        
-        <div class="footer" >
+    <div id="cartdiv2" ondrop="drop1(event)" ondragover="allowDrop1(event)">
+        <!--    <img src="/img/macbooklid.png" id="cart">-->
+
+    </div>
+
+
+
+    <!--contact div-->
+    <br style="clear:both;" />
+
+    <div class="footer">
         <div class="media-links">
-        <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
-        <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a> </div>
-            
-            
-    <p>© 2017 - LEMONADE GALS</p></div>
-        
-        <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a> <!--private side lemons-->
-        
-    </body> <!--close body-->
+            <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+            <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
+        </div>
+
+
+        <p>© 2017 - LEMONADE GALS</p>
+    </div>
+
+    <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
+    <!--private side lemons-->
+
+</body>
+<script>
+    var orders = document.querySelector("aside").innerHTML;
+    Cookies.set("currentorders", orders);
+    alert(Cookies.get("currentorders"));   
+</script>
+
+
+<!--close body-->
     
 </html>
