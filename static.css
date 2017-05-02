@@ -76,6 +76,7 @@ a {
 
 .navbar {
     padding: 0px 40px;
+    z-index: 550;
 }
 
 .navlinks a {
