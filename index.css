@@ -19,7 +19,6 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #splash-quote-div {
@@ -34,7 +33,6 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #splash2-quote-div {
@@ -84,4 +82,47 @@ a {
     text-shadow: 0 0 2px #fff;
     cursor: pointer;
     transition: 0.2s ease;
+}
+
+@media (min-width: 480px) {
+
+}
+
+
+@media (max-width: 540px) {
+
+
+
+}
+
+
+
+@media (min-width: 540px) {
+
+}
+
+
+@media (min-width: 680px) {
+	
+}
+
+@media (max-width: 680px) {
+    
+}
+
+@media (min-width: 740px) {
+
+}
+
+@media (min-width: 990px) {
+
+}
+
+@media (max-width: 1100px) {
+    #splash2,#splash1 {
+        background-attachment: scroll;
+        background-size: auto;
+        max-height: 400px;
+    }
+    
 }

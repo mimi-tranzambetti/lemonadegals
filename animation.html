@@ -56,7 +56,7 @@
 <script>
 
 var play1 = function(){
-	   
+
     var half=(($( document ).width())/2);
         
         $("#hillarymouth").
@@ -264,7 +264,7 @@ var play1 = function(){
 				"left":half+20,
 			},300, "linear").
     animate({
-        "left":half-50, bottom: 10,
+        "left":half-50, bottom: 50,
      },400).
     animate({
         "left":half+50, bottom: -50,
@@ -470,12 +470,10 @@ var play2 = function(){
 			animate({
 				"bottom":"0px", "left":"0px"
 			}, 200, function(){
-                $("#hillarybase img").attr("src", "img/animate-assets/fire.gif");
+                $("#hillarybase img").delay(200).attr("src", "img/animate-assets/fire.gif");
                 $("#hillarymouth").animate({"opacity":"0",},10);    
-                $("#berniebase img").attr("src", "img/animate-assets/fire.gif");
+                $("#berniebase img").delay(200).attr("src", "img/animate-assets/fire.gif");
                 $("#berniemouth").animate({"opacity":"0",},10);
-                $("#trumpbase img").attr("src", "img/animate-assets/fire.gif");
-                $("#trumphead").animate({"opacity":"0",},10);
 			});
 
 }
@@ -484,31 +482,59 @@ var play3 = function(){
 
      var half=(($( document ).width())/2);
     
-    $("#laminate").
+    $("#ducksticker").
         animate({
             "opacity":"1",
-        }, 2000, function(){ 
+        }, 4000, function(){ 
         $("#paper").
         animate({
             "bottom":"80px", 
         }, 500, "swing");
-        $("#laminate").
+        $("#laminate").animate({
+			"opacity":"1", "bottom":"80px",
+		},2000);
+        $("#ducksticker").
         animate({
             "bottom":"80px", 
         }, 500, "swing");
-        $("#printerlip").animate({
+        $("#printerlip").delay(100).animate({
 			"opacity":"0",
 		},500);
-        $("#scissors").animate({
+        $("#printertop").delay(100).animate({
+			"opacity":"0",
+		},500);
+        $("#scissors").delay(2500).animate({
 			"opacity":"1", 
-        },500);
-        $("#printertop").animate({
-			"opacity":"0",
-		},500);
-        $("#laminate").animate({
-			"opacity":"1",
-            },500);
-        });
+        },500).animate({
+			"left":"-200px", 
+        },2500);
+    
+    $(document).delay(300).queue(function(){
+                $("#paper img").attr("src", "img/animate-assets/computer.png");
+                    $( this ).dequeue();},500); 
+        $(document).delay(1000).queue(function(){
+                $("#paper img").attr("src", "img/animate-assets/bottle.png");
+                    $( this ).dequeue();},500); 
+        $(document).delay(1000).queue(function(){
+                $("#paper img").attr("src", "img/animate-assets/window.png");
+                    $( this ).dequeue();},500); 
+            
+                });
+    
+    $(document).delay(9500).queue(function(){
+			 $(function(){
+        $(".nouns").typed({
+                strings: ["Laptops.", "Water bottles.", "Windows.", "And more!"],
+                typeSpeed: 5,
+                loop: false,
+                showCursor: false,
+                backDelay: 500,
+                backSpeed: 2,
+
+      }); $( this ).dequeue();});});
+        
+        
+    
     
 }
 
@@ -519,21 +545,65 @@ $(document).ready(function(){
         $("#sound1").on( "ended", function(){
             $("#trumphead img").attr("src", "img/animate-assets/explosion.gif");
             $("#trumphead").css("bottom","200px").css("left","20px");
-            $("#trumpbase img").delay(2000).attr("src", "img/animate-assets/fire.gif");
-            $("#trumphead").delay(2000).animate({"opacity":"0",},10);
+            $("#trumpbase img").delay(1000).attr("src", "img/animate-assets/fire.gif");
+            $("#trumphead").delay(1000).animate({"opacity":"0",},10);
             $("#sound2")[0].play();
             play2();
+            $(document).delay(5000).queue(function(){
+			 $(function(){
+              $(".element").typed({
+                strings: ["We put sweet spins ^500 on sour situations."],
+                typeSpeed: 40,
+                loop: false,
+                showCursor: false,
+                backDelay: 800,
+                backSpeed: 10,
+
+      });
+                 $( this ).dequeue();
+			});
+    });
+
             
         });
         $("#sound2").on( "ended", function(){
             $("#politics").animate({
 			"opacity":"0",
 		},500);
+            $(".element").animate({
+			"opacity":"0",
+		},500);
             $("#sound3")[0].play();
-            $("#process").animate({
+            $("#laptop").animate({
 			"opacity":"1",
 		},500);
+            $(document).delay(2000).queue(function(){
+			$("#laptop img").attr("src", "img/animate-assets/stickerlaptop.png");
+                $( this ).dequeue();
+			});
+            $("#laptop").delay(3000).animate({
+			"opacity":"0",},500).queue(function(){
+            $("#process").animate({
+			"opacity":"1",
+		},500)
+			
+                $( this ).dequeue();
+			}).delay(4000).queue(function(){
+			$("#scissors").animate({
+			"opacity":"0",
+		},500);
+                $( this ).dequeue();
+			}).delay(2000).queue(function(){
+			$("#laminate").animate({
+			"opacity":"0",
+		},500);
+                $( this ).dequeue();
+			
+			});
             play3();
+            
+            
+            
         });
         $("#sound3").on( "ended", function(){
             
@@ -548,21 +618,15 @@ $(document).ready(function(){
 			"opacity":"0",
             
 		},500);
+            $("#laptop").animate({
+			"opacity":"0",
+            
+		},500);
+            $(".nouns").animate({
+			"opacity":"0",
+		},500);
         });
     
-      $(function(){
-      $(".element").typed({
-        strings: ["B***ch, Please", "Dump Trump!", "Duck Frump.", "She persisted.", "Alternative Trump?"],
-        typeSpeed: 30,
-        startDelay: 400,
-        loop: true,
-        backDelay: 800,
-        backSpeed: 10,
-
-
-      });
-    });
-
 });
     
 
@@ -597,15 +661,17 @@ $(document).ready(function(){
 <style>
 
 body{
-        background-color: #98dbd9;458989
+        background-color: #98dbd9;
         background-position: bottom;
         font-family: 'Nunito', sans-serif;
     }
     
-#hillarybase, #hillarymouth, #berniebase, #berniemouth, #trumpbase, #trumphead, #dump, #carrot, #persist, #dog, #duck, #printerlip, #printertop, #ducksticker, #laminate, #scissors, #paper{
+#hillarybase, #hillarymouth, #berniebase, #berniemouth, #trumpbase, #trumphead, #dump, #carrot, #persist, #dog, #duck, #printerlip, #printertop, #ducksticker, #laminate, #scissors, #paper, #laptop{
 	position: absolute;	
     bottom:0px;
 }
+    
+
 
 #hillarybase {
     right:0px;
@@ -687,47 +753,73 @@ body{
     
     }
     
-#textbubble {
-	position:fixed;
-	bottom:0px;
-	text-align:center;
-	width: 100%;
-	margin-bottom: 12px;
-    z-index: 20;
-}
+
+
     
     #process, #scissors{
         opacity:0;
     }
     
     
-    #printertop, #printerlip, #ducksticker, #laminate,#paper, #scissors{
+    #printertop, #printerlip, #ducksticker, #laminate,#paper, #scissors, #laptop{
         width: 100%;
         margin:auto;
         bottom: 180px;
     }
     
+    #scissors{
+        left: 200px;
+    }
     #stickergroup, #laminate, #paper, #ducksticker{
-        left: 30px;
+
         bottom: 180px;
     }
+    
+    #laptop{
+        opacity:0;
+    }
+    
+    #textbubble {
+	position:fixed;
+	bottom:470px;
+	text-align:center;
+	width: 100%;
+    z-index: 20;
+}
+    
+    
+    .element, .nouns{
+        font-size: 35pt;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    
     
     #form{
         opacity:0;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 80px;
+        z-index: 500;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
     }
 </style>
 </head>
     
 <body>
     
-<div id="politics">
+
  <div id="textbubble">
-     <h2><span class="element" style="color: #ff7d31;"></span></h2>
-                
+     <h1><span class="element" style="color: #458989;"></span></h1>
+     <h1><span class="nouns" style="color: #458989;"></span></h1>
+                           
             </div> <!-- close intro -->
 
+<div id="politics">
 <div id="hillarybase">
 	<img src="img/animate-assets/hillarybase.png" />
 </div>
@@ -773,7 +865,12 @@ body{
 	<img src="img/stickers/persist.png" />
 </div>
     
+<div id="laptop">
+	<img src="img/animate-assets/laptop.png" />
+</div>
+    
 <div id="process">
+
 
 <div id="printerlip">
 	<img src="img/animate-assets/printerbottom.png" />
@@ -802,6 +899,7 @@ body{
 	<img src="img/animate-assets/cut.gif" />
 </div>
 
+    
 
 <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJy3K8-rSP_K7pvD3SoSwD6IlTHxXOPsfWlfwfiDko3nanOQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0" z-index="200">Loading...</iframe>
 <audio id="sound1">
