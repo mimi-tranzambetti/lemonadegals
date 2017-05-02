@@ -2,7 +2,9 @@
 //var sticker = img/duck-frump.png;
 
 var total = 0;
-
+var orders = document.querySelector("aside").innerHTML;
+Cookies.set("currentorders", orders);
+alert(Cookies.get("currentorders"));
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -24,6 +26,8 @@ function drop(ev) {
 
     var orders = document.querySelector("aside").innerHTML;
     document.querySelector("aside").innerHTML = orders + "Small Duck Frump $1<br>";
+    
+    alert(Cookies.get("currentorders"));
 //I broke this intentionally
     ev.target.apppendChild(document.getElementById(data));
     document.getElementById(data).style.width = "50px";
@@ -51,14 +55,13 @@ function drop1(ev1) {
     var orders = document.querySelector("aside").innerHTML;
     document.querySelector("aside").innerHTML = orders + "Small Duck Frump $2<br>";
     
-
+    alert(Cookies.get("currentorders"));
     //    alert(total);
     ev1.target.appendChild(document.getElementById(data1));
     document.getElementById(data1).style.width = "100px";
 }
-var orders = document.querySelector("aside").innerHTML;
-Cookies.set("currentorders", orders);
-alert(Cookies.get("currentorders"));
+
+
 
 
 
