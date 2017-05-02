@@ -340,7 +340,7 @@ input {
 .dropdown:hover .dropbtn {
     background-color: rgba(0,0,0,0);
 }
-=======
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
