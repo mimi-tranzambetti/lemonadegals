@@ -9,7 +9,7 @@ console.log(banners);
 //var bannerchange = document.querySelector("#colorpicker").value;
 //alert(document.querySelector("#bannerlogo").src);
 
-
+//document.querySelector("#bannerlogo").src = "img/logonew.png";
 
 var colorCheck = function () {
 
