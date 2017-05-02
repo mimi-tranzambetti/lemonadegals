@@ -17,10 +17,11 @@ function preload() { // loads the stickers into the system, to be used later
 function setup() { 
 	var canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent("sketch");
-    background(0,0,0);
-    setTimeout(Burst, 5000);
+    noFill();
+
+    setTimeout(removeFrame, 5000);
 	
-    frameRate(80);
+    frameRate(60);
     
     for (i=0; i < stickercount; i++) { // this makes the instances of the stickers
         stickerz.push(new Burst()); 
@@ -31,7 +32,7 @@ function setup() {
 function draw() {
     
 //	background(255,255,255,0); // transparent, so that it can be overlaid on website
-    //image("banner.png", 500,500, 200,200);
+    image(img0, 500,500, 200,200);
     
     //console.log(frameCount); // logs the frame count just to keep track
     
@@ -56,7 +57,7 @@ function Burst() {
         this.y += this.yspeed;
         }     
 }
-function mousePressed() {
+function removeFrame() {
   remove(); // remove whole sketch on mouse press
 }
 
