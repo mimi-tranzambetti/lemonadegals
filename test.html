@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <link rel=icon href="img/favicon.png">
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lemonade Gals" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+    <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
+    <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
+    <title>Lemonade Gals</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://webdev.usc.edu/jqm.js"></script>
+    <script src="http://webdev.usc.edu/jqui.min.js"></script>
+
+    <!-- <script src="jquery.js"></script>  -->
+        
+    <script>
+var play = function(){
+        $("#wave1").animate({
+			"opacity":"1", "bottom":"0",
+		},1000);
+		$("#wave2").animate({
+			"opacity":"1", "bottom":"0",
+		},1000);
+    
+}
+
+$(document).ready(function(){
+	
+	play();
+
+});
+
+    </script>
+        
+    <style>
+        
+    
+        #animateddiv{
+            width: 100%;
+            height: 100%;
+            /*background-color: #abdffd;*/
+            position: fixed;
+            bottom: 0px;
+        }
+        
+	   #wave1, #wave2, #ducksticker, #can, #lid, #face, #dumpsticker, #dogsticker, #carrotsticker, #persiststicker, #banner {
+		      	position: absolute;	
+                bottom:0px;
+	   }
+            
+        #wave1{
+           z-index: 2;
+            bottom: -200px;
+            opacity: 0;
+           
+	   }
+            
+	   #wave2{
+           z-index: 0;
+           bottom: -200px;
+            opacity: 0;
+	   }
+            
+	   #ducksticker{
+           z-index: 3;
+           right: -250px;
+	   }
+        
+        #trashanimation{
+            opacity: 0;
+        }
+        #can{
+            
+        }
+        
+        #lid{
+            
+        }
+        
+        #face{
+            
+        }
+        
+        
+        #dumpsticker{
+            
+        }
+        
+        #banneranimation{
+            opacity: 0;
+        }
+        
+        #dogsticker{
+            
+        }
+        
+        #carrotsticker{
+            
+        }
+        
+        #persiststicker{
+            
+        }
+        
+        .sticker img{
+            width: 70%;
+        }
+        
+    </style>
+</head>
+
+<body>
+        
+        <div id="animateddiv">
+            
+        <div id="duckanimation">
+        <div id="wave1">
+	    <img src="img/animate-assets/wave-1.png">
+        </div>
+
+        <div id="wave2">
+	    <img src="img/animate-assets/wave-2.png">
+        </div>
+
+        <div id="ducksticker" class="sticker">
+	    <img src="img/stickers/duck.png">
+        </div>
+            </div>
+            
+            <div id="trashanimation">
+        <div id="can" class="sticker">
+	    <img src="img/animate-assets/can.png">
+        </div>
+
+        <div id="face" class="sticker">
+	    <img src="img/animate-assets/face.png">
+        </div>
+
+        <div id="lid" class="sticker">
+	    <img src="img/animate-assets/lid.png">
+        </div>
+                
+        <div id="dumpsticker" class="sticker">
+	    <img src="img/stickers/dump.png">
+        </div>
+                
+            </div>
+            
+            <div id="banneranimation">
+        <div id="banner">
+	    <img src="img/logonew.png">
+        </div>
+
+        <div id="dogsticker" class="sticker">
+	    <img src="img/stickers/dog.png">
+        </div>
+        
+        <div id="carrotsticker" class="sticker">
+	    <img src="img/stickers/carrot.png">
+        </div>
+        
+        <div id="persiststicker" class="sticker">
+	    <img src="img/stickers/persist.png">
+        </div>
+                <br style="clear:both;">
+            </div>
+            
+    
+        </div> <!--close animation-->
+
+
+    </body>
+    <!--close body-->
+
+</html>

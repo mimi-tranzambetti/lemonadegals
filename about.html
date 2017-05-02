@@ -1,7 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<<<<<<< HEAD
 
+=======
+    <head>
+        <link rel=icon href="img/favicon.png">
+        
+        <meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Lemonade Gals" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
+        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
+        <title>Lemonade Gals</title>
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="static.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+        <script>
+    $(document).ready(function() {
+            
+                $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 300) { // check if user scrolled more than 50 from top of the browser window
+                    $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
+                    $(".header").css("height", "50px");
+                    $(".header").css("box-shadow", "10px 0px 10px gray");
+                    $(".navlinks a").css("color", "#458989");
+
+                    $(".logo").css("float", "left");
+                    $(".navbar").css("float", "right");
+                    $(".header").css("background-color", "transparent");
+                    $(".header").css("height", "100px");
+                    $(".navlinks a").css("color", "#aaaaaa");
+                    $(".header").css("box-shadow", "0px 0px 0px white");
+                    $(".logo").css("float", "none");
+                    $(".navbar").css("float", "none");
+        
+            });)};
+</script>
+        
+        
+    </head>
+    <body>
+>>>>>>> origin/master
        
 <head>
     <link rel=icon href="img/favicon.png">
@@ -73,10 +121,17 @@
 
         <div class="navbar">
             <div class="navlinks">
+<<<<<<< HEAD
                 <a href="about.html" class="current" class="querynav">About</a>
                 <a href="product.html" class="querynav">Shop</a>
                 <a href="breakdown.html"class="querynav">Breakdown</a>
                 <a href="animation.html"class="querynav">Animation</a>
+=======
+                <a href="about.html" class="current">About</a>
+                <a href="product.html">Shop</a>
+                <a href="breakdown.html">Breakdown</a>
+                <a href="animation.html" id="animation">Animation</a>
+>>>>>>> origin/master
             </div>
         </div>
         <!--close navbar-->

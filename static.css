@@ -76,6 +76,7 @@ a {
 
 .navbar {
     padding: 0px 40px;
+    z-index: 550;
 }
 
 .navlinks a {
@@ -453,7 +454,9 @@ aside{
 #pickerdivhelp{
     
 }
-
+.logo{
+        visibility: visible;
+    }
 
 @media (max-width: 1024px) {
     h1 {
@@ -511,7 +514,12 @@ aside{
     height: 250px;
 }
     
+    
 }
+
+#animation{
+        visibility: visible;
+    }
 
 @media (max-width: 540px) {
     h1 {
@@ -549,9 +557,20 @@ aside{
     padding-right: 0%;
     padding-bottom: 5%;
 }
+    a {
+    text-decoration: none;
+    color: #eee;
+}
+    
+    
+    .logo{
+        visibility: collapse;
+    }
+
 }
 
 
+<<<<<<< HEAD
 @media (max-width: 471px){
 	.querynav{
 		clear: both;
@@ -564,4 +583,6 @@ aside{
 		display:none;
 	}
 }
+=======
+>>>>>>> origin/master
 

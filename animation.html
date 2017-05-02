@@ -611,6 +611,7 @@ $(document).ready(function(){
             $("#form").animate({
 			"opacity":"1",
 		},500);
+            $("#textbubble").css("bottom", "0px");
             $("#process").animate({
 			"opacity":"0",
 		},500);
@@ -811,7 +812,24 @@ body{
 </head>
     
 <body>
-    
+
+    <div class="header">
+
+        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+
+        <div class="navbar">
+            <div class="navlinks">
+                <a href="about.html">About</a>
+                <a href="product.html">Shop</a>
+                <a href="breakdown.html">Breakdown</a>
+                <a href="animation.html" class="current" id="animation">Animation</a>
+            </div>
+        </div>
+        <!--close navbar-->
+
+    </div>
+    <!--close header-->
+
 
  <div id="textbubble">
      <h1><span class="element" style="color: #458989;"></span></h1>
@@ -918,23 +936,7 @@ body{
 	<source type="audio/mp3" src="img/animate-assets/lemonade4.mp3">
 </audio>
 
-    <div class="header">
-
-        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
-
-        <div class="navbar">
-            <div class="navlinks">
-                <a href="about.html">About</a>
-                <a href="product.html">Shop</a>
-                <a href="breakdown.html">Breakdown</a>
-                <a href="animation.html" class="current">Animation</a>
-            </div>
-        </div>
-        <!--close navbar-->
-
-    </div>
-    <!--close header-->
-
+    
     <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side" style="z-index: 200;"> </a>
     <!--private side lemons-->
 
