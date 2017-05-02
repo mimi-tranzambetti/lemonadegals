@@ -26,8 +26,10 @@
 
     <!-- <script src="jquery.js"></script>  -->
 
-    <script>
+ <script>
         $(document).ready(function() {
+			var mq = window.matchMedia("(max-width: 471px)");
+
             $(window).scroll(function() { // check if scroll event happened
                 if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
                     $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
@@ -38,25 +40,27 @@
                     $(".logo").css("height", "30px");
                     $(".logo").css("float", "left");
                     $(".navbar").css("float", "right");
-
-
-                } else {
+					if (mq.matches) {
+						document.querySelector(".navbar").style.display="none";
+                }
+				} else {
                     $(".header").css("background-color", "transparent");
-                    $(".header").css("box-shadow", "0px 0px 0px white");
+
                     $(".header").css("height", "50px");
+                    $(".header").css("box-shadow", "0px 0px 0px white");
                     $(".navlinks a").css("color", "white");
                     $(".navlinks a").css("margin", "15px 10px");
                     $(".logo").css("float", "left");
                     $(".logo").css("height", "50px");
                     $(".navbar").css("float", "right");
+					document.querySelector(".navbar").style.display="unset";
 
                 }
             });
-
-
-
         });
+
     </script>
+
 
 
 </head>

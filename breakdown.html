@@ -1,58 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel=icon href="img/favicon.png">
-        
-        <meta charset="utf-8" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Lemonade Gals" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
-        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
-        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/banner.png" />
-        <title>Lemonade Gals</title>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="static.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
-        <script>
-    $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
-          $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
-           $(".header").css("height", "25px");
-            $(".header").css("box-shadow", "10px 0px 10px gray");
-           $(".navlinks a").css("color", "#458989");
-            $(".navlinks a").css("margin", "0px 10px");
-            $(".logo").css("height", "30px");
-            $(".logo").css("float", "left");
-            $(".navbar").css("float", "right");
-            
-            
-        } else {
-          $(".header").css("background-color", "transparent");
-            $(".header").css("box-shadow", "0px 0px 0px white");
-            $(".header").css("height", "50px");
-           $(".navlinks a").css("color", "white");
-            $(".navlinks a").css("margin", "15px 10px");
-            $(".logo").css("float", "left");
-            $(".logo").css("height", "50px");
-            $(".navbar").css("float", "right");
-        
-        }
-      });
-    });
-</script>
-        
-        
-    </head>
-    <body>
+    
       
 <head>
     <link rel=icon href="img/favicon.png">
@@ -76,6 +25,8 @@
 
     <script>
         $(document).ready(function() {
+			var mq = window.matchMedia("(max-width: 471px)");
+
             $(window).scroll(function() { // check if scroll event happened
                 if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
                     $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
@@ -86,23 +37,27 @@
                     $(".logo").css("height", "30px");
                     $(".logo").css("float", "left");
                     $(".navbar").css("float", "right");
-
-
-                } else {
+					if (mq.matches) {
+						document.querySelector(".navbar").style.display="none";
+                }
+				} else {
                     $(".header").css("background-color", "transparent");
-                    $(".header").css("box-shadow", "0px 0px 0px white");
+
                     $(".header").css("height", "50px");
+                    $(".header").css("box-shadow", "0px 0px 0px white");
                     $(".navlinks a").css("color", "white");
                     $(".navlinks a").css("margin", "15px 10px");
                     $(".logo").css("float", "left");
                     $(".logo").css("height", "50px");
                     $(".navbar").css("float", "right");
+					document.querySelector(".navbar").style.display="unset";
 
                 }
             });
         });
 
     </script>
+
 
 
 </head>
@@ -179,7 +134,7 @@
 
 
 
-    <div class="footer" style=" position:fixed;
+    <div class="footer" style=" pos ition:fixed;
     bottom: 0;
     width: 100%;">
         <div class="media-links">
