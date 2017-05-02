@@ -20,9 +20,172 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="http://webdev.usc.edu/jqm.js"></script>
+    <script src="http://webdev.usc.edu/jqui.min.js"></script>
+    <script src="jQueryRotate.js"></script>
     <!-- <script src="jquery.js"></script>  -->
+        
+    <script>
+    var play = function(){
+        
+        var half=(($( document ).width())/2);
+        $("#wave1").animate({
+			"opacity":"1", "bottom":"0",
+		},1000);
+		$("#wave2").animate({
+			"opacity":"1", "bottom":"0",
+		},1000);
+        $("#ducksticker").animate({right: half, bottom: 50},3000, "swing").animate({right: half*2, bottom: 0},3000, "swing");
+        $(document).delay(500).queue(function(){
+            $("#ducksticker").rotate({
+      duration:500,
+      angle: 0,
+      animateTo:10
+      });$( this ).dequeue();
+    }).delay(1000).queue(function(){
+            $("#ducksticker").rotate({
+      duration:500,
+      angle: 0,
+      animateTo:-5,
+        easing: $.easing.easeInOutElastic,        
+      });$( this ).dequeue();
+    }).delay(1500).queue(function(){
+            $("#ducksticker").rotate({
+      duration:500,
+      angle: 0,
+      animateTo:5,
+        easing: $.easing.easeInOutElastic,        
+      });$( this ).dequeue();
+    });
+    
+    $(document).delay(2500).queue(function(){
+        
+        $("#wave2").animate({
+			"opacity":"0", "bottom":"-200",
+		},1500);
+        $("#wave1").animate({
+			"opacity":"0", "bottom":"-200",
+		},1000);
+        $( this ).dequeue();
+    });
+    
+    
+    
+    
+    }
+  
+			
+    var trash = function(){
+    
+         var half=(($( document ).width())/2);
+        
+        $(document).delay(1000).queue(function(){
+        $("#trashanimation").animate({
+			"opacity":"1",
+		},1000);
+        $("#lid").animate({
+			"opacity":"1", "bottom":"285",
+		},300);
+        $("#can").animate({
+			"opacity":"1", "bottom":"0",
+		},1000);
+        $("#face").animate({
+			"opacity":"1", "bottom":"115",
+		},500);
+            $( this ).dequeue();
+            
+    }).delay(1000).queue(function(){
+        $("#lid").rotate({
+      duration:500,
+      angle: 0,
+      animateTo:10,
+        easing: $.easing.easeInOutElastic,        
+      });
+        $("#lid").animate({
+			"bottom":"320", left: 20,
+		},300).rotate({
+      duration:500,
+      angle: 10,
+      animateTo:20,
+        easing: $.easing.easeInOutElastic,        
+      });
+        $("#face").animate({
+			"bottom":"190", right: 20,
+		},1000);
+            $( this ).dequeue();
+    }).delay(2000).queue(function(){
+            $("#trashanimation").animate({"opacity":"0"},1000);
+            $("#lid").animate({"bottom":"-220"},1500);
+            $("#can").animate({"bottom":"-500"},1000);
+            $("#face").animate({"bottom":"-300"},900);
+            $( this ).dequeue();
+            });
+        
+    }
+    
+    var banner = function(){
+    
+         var half=(($( document ).width())/2);
+        
+        $(document).delay(1000).queue(function(){
+            $("#banneranimation").animate({
+                "opacity":"1",
+            },1000);
+            $("#banner").animate({
+                "opacity":"1", "top":"400",
+            },300);
+            
+                $( this ).dequeue();
 
+        }).delay(500).queue(function(){
+            $("#dogsticker").rotate(5); 
+            $("#dogsticker").animate({
+                "opacity":"1", "top":"280",
+            },300 , "swing");
+            
+                $( this ).dequeue();}).delay(500).queue(function(){
+            $("#carrotsticker").rotate(-10);
+            $("#carrotsticker").animate({
+                "opacity":"1", "top":"150",
+            },500, "swing");
+            
+                $( this ).dequeue();}).delay(500).queue(function(){
+             $("#persiststicker").animate({
+                "opacity":"1", "top":"310",
+            },500 , "swing");
+            
+                $( this ).dequeue();}).
+        
+        delay(2000).queue(function(){
+            $("#banneranimation").animate({"opacity":"0"},1000);
+            $("#persiststicker").animate({"top":"-220"},1100);
+            $("#carrotsticker").animate({"top":"-500"},1000);
+            $("#dogsticker").animate({"top":"-300"},900);
+            $("#banner").animate({"top":"-300"},1200);
+            $("#animateddiv").animate({"opacity":"0"},2000);
+            $( this ).dequeue();
+            });
+        
+        
+        
+       
+        
+            
+        
+        }
+    
+    
+
+$(document).ready(function(){
+	play();
+    trash();
+    banner();
+    
+
+});
+    </script>
+
+        
     <script>
         $(document).ready(function() {
             $(window).scroll(function() { // check if scroll event happened
@@ -54,12 +217,179 @@
 
         });
     </script>
-
-
+        
+    <style>
+        
+    
+        #animateddiv{
+            width: 100%;
+            height: 100%;
+            background-color:#cdfdff;
+            position: fixed;
+            bottom: 0px;
+            opacity: 1;
+        }
+        
+	   #wave1, #wave2, #ducksticker, #can, #lid, #face, #dumpsticker, #dogsticker, #carrotsticker, #persiststicker, #banner {
+		      	position: absolute;	
+                bottom:0px;
+	   }
+            
+        #wave1{
+           z-index: 2;
+            bottom: -200px;
+            opacity: 0;
+           
+	   }
+            
+	   #wave2{
+           z-index: 0;
+           bottom: -200px;
+            opacity: 0;
+	   }
+            
+	   #ducksticker{
+           z-index: 3;
+           right: -250px;
+	   }
+        
+        #trashanimation{
+            opacity: 0;
+            width: 100%;
+            margin: auto;
+            bottom: 0;
+            
+            
+        }
+        #can, #lid, #face{
+            width: 100%;
+            margin: auto;
+            
+            
+        }
+        
+        #can{
+            z-index: 1;
+            bottom: -500;
+            
+            
+        }
+        
+        #lid{
+            z-index: 2;
+            bottom: -220;
+            
+        }
+        
+        #face{
+            z-index: 0;
+            bottom: -300;
+        }
+        
+        
+        #dumpsticker{
+            opacity: 0;
+        }
+        
+        #banneranimation {
+            opacity: 0;
+        }
+        
+        #dogsticker, #carrotsticker, #persiststicker, #banner{
+            width: 100%;
+            margin: auto;
+            
+        }
+        
+        #dogsticker{
+            top:-200px;
+            left: 100px;
+        }
+        
+        #carrotsticker{
+            top:-300px;
+            right: 100px;
+        }
+        
+        
+        #persiststicker{
+            top:-200px;
+            z-index
+            
+        }
+        
+        #banner{
+            top:-200px;
+            z-index: 5;
+        }
+        
+        #banner img{
+            max-width: 600px;
+            width: 70%;
+        }
+        
+    </style>
 </head>
 
 <body>
         
+        <div id="animateddiv">
+            
+        <div id="duckanimation">
+        <div id="wave1">
+	    <img src="img/animate-assets/wave-1.png">
+        </div>
+
+        <div id="wave2">
+	    <img src="img/animate-assets/wave-2.png">
+        </div>
+
+        <div id="ducksticker" class="">
+	    <img src="img/stickers/duck.png">
+        </div>
+            </div>
+            
+            <div id="trashanimation">
+        <div id="can" class="">
+	    <img src="img/animate-assets/can.png">
+        </div>
+
+        <div id="face" class="">
+	    <img src="img/animate-assets/face.png">
+        </div>
+
+        <div id="lid" class="">
+	    <img src="img/animate-assets/lid.png">
+        </div>
+               </div> 
+        <div id="dumpsticker" class="sticker">
+	    <img src="img/stickers/dump.png">
+        </div>
+                
+            
+            
+            <div id="banneranimation">
+        <div id="banner">
+	    <img src="img/logonew.png">
+        </div>
+
+        <div id="dogsticker" class="">
+	    <img src="img/stickers/dog.png">
+        </div>
+        
+        <div id="carrotsticker" class="">
+	    <img src="img/stickers/carrot.png">
+        </div>
+        
+        <div id="persiststicker" class="">
+	    <img src="img/stickers/persist.png">
+        </div>
+                <br style="clear:both;">
+            </div>
+            
+    
+        </div> <!--close animation-->
+
         <div class="header">
 
             <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
