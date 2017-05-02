@@ -24,7 +24,7 @@ function drop(ev) {
 
     var orders = document.querySelector("aside").innerHTML;
     document.querySelector("aside").innerHTML = orders + "Small Duck Frump $1<br>";
-
+//I broke this intentionally
     ev.target.apppendChild(document.getElementById(data));
     document.getElementById(data).style.width = "50px";
 
