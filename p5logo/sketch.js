@@ -4,6 +4,7 @@ var stickercount = 70; // makes 70 random stickers appear
 
 function preload() { // loads the stickers into the system, to be used later
     
+    
     img0 = loadImage ("p5logo/banner.png"); // logo 
     
     img1 = loadImage("p5logo/duckie.png"); // duck frump
@@ -17,7 +18,7 @@ function preload() { // loads the stickers into the system, to be used later
 function setup() { 
 	var canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent("sketch");
-    noFill();
+   background("#000000");
 
     setTimeout(removeFrame, 5000);
 	
@@ -31,17 +32,19 @@ function setup() {
     
 function draw() {
     
-//	background(255,255,255,0); // transparent, so that it can be overlaid on website
-//    image(img0, 500,500, 200,200);
+       background(255);  
     
     //console.log(frameCount); // logs the frame count just to keep track
     
     for(var i=0; i<stickerz.length;i++){ // actually drawing/generating the stickers on the screen
+        
         stickerz[i].draw();  
     }
+    
 }
 
 function Burst() {
+    
     
     this.x = random(0, windowWidth);  // random coordinates where it starts
     this.y = random(0, windowHeight); 
@@ -49,7 +52,7 @@ function Burst() {
     this.graphic = eval("img" + floor(random(1,6))); // picks the random images
     
     this.draw = function(){ // draws the stickers onto the screen
-        
+
     image(this.graphic, this.x, this.y, 200, 200); 
         
         this.yspeed =  random(1,7);
@@ -70,3 +73,10 @@ function windowResized() {
 //  remove(); // remove whole sketch on mouse press
 //}
  
+function mouseWheel(event) {
+  print(event.delta);
+  //move the square according to the vertical scroll amount
+  pos += event.delta;
+  //uncomment to block page scrolling
+  //return false;
+}
