@@ -35,7 +35,7 @@ function draw() {
        background(255);  
     
     //console.log(frameCount); // logs the frame count just to keep track
-    
+    image(img0, windowWidth/2,45, 200,200);
     for(var i=0; i<stickerz.length;i++){ // actually drawing/generating the stickers on the screen
         
         stickerz[i].draw();  
