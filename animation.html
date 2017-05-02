@@ -481,12 +481,21 @@ var play2 = function(){
 }
 
 var play3 = function(){
+
+     var half=(($( document ).width())/2);
     
-    
-    $("#stickergroup").
+    $("#laminate").
         animate({
-            "bottom":"-100px", "width":"110%",
-        }, 500, "swing", function(){ 
+            "opacity":"1",
+        }, 2000, function(){ 
+        $("#paper").
+        animate({
+            "bottom":"80px", 
+        }, 500, "swing");
+        $("#laminate").
+        animate({
+            "bottom":"80px", 
+        }, 500, "swing");
         $("#printerlip").animate({
 			"opacity":"0",
 		},500);
@@ -510,6 +519,8 @@ $(document).ready(function(){
         $("#sound1").on( "ended", function(){
             $("#trumphead img").attr("src", "img/animate-assets/explosion.gif");
             $("#trumphead").css("bottom","200px").css("left","20px");
+            $("#trumpbase img").delay(2000).attr("src", "img/animate-assets/fire.gif");
+            $("#trumphead").delay(2000).animate({"opacity":"0",},10);
             $("#sound2")[0].play();
             play2();
             
@@ -696,7 +707,7 @@ body{
         bottom: 180px;
     }
     
-    #stickergroup{
+    #stickergroup, #laminate, #paper, #ducksticker{
         left: 30px;
         bottom: 180px;
     }
