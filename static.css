@@ -52,7 +52,6 @@ h1 {
 
 #splash-about {
     background: url('img/productshot/trumpflower.jpg') no-repeat;
-    height: 200px;
     background-attachment: fixed;
     background-position: 0px -250px;
     background-repeat: no-repeat;
@@ -99,13 +98,6 @@ a {
     padding: 2%;
     padding-bottom: 1%;
     padding-top: 1%;
-}
-#form{
-    
-    padding-bottom: 1%;
-    padding-top: 1%;  
-    margin: 0 auto;
-    text-align: center;
 }
 
 .button {
@@ -268,11 +260,13 @@ a {
 
 #form {
     float: right;
-    width: 22%;
+    width: 45%;
     text-align: left;
-    ppadding-top: 3%;
     position:relative;
-    right: 30%
+    right: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;  
+    margin: 0 auto;
 }
 
 .label {
@@ -467,11 +461,52 @@ aside{
     margin: 5px;
     font-size: 30pt;
 }
-    #splash2,#splash1 {
-            background-attachment: scroll;
-            background-size: auto;
-            max-height: 400px;
-        }
+    #splash-about, #bts, #dealroomheader{
+        background-attachment: scroll;
+        background-position: 0px;
+    }
+    
+    #bts {
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+}
+    p{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    #form {
+    float: none;
+    clear: both;
+    width: 70%;
+    margin: auto;
+    right: 0%;
+        text-align: center;
+    
+}
+    #productleft {
+    float: none;
+    width: 80%;
+    margin: auto;
+}
+    
+    .productsticker {
+    width: 300px;
+    height: 300px;
+}
+    
+    .label {
+    width: 100px;
+    margin-right: 20px;
+    text-align: right;
+    
+}
+
+    .sticker {
+    width: 250px;
+    height: 250px;
+}
     
 }
 
@@ -483,4 +518,33 @@ aside{
     margin: 5px;
     font-size: 20pt;
 }
+    .productsticker {
+    width: 250px;
+    height: 250px;
+}    
+    .label {
+    width: 50px;
+    
 }
+    .sticker {
+    width: 200px;
+    height: 200px;
+}
+    #nameleft {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -60px;
+}
+    
+    #nameright {
+    float: none;
+    width: 90%;
+    clear:both;
+    margin: auto;
+    height: 100%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+}
+}
+
