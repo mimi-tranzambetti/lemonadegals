@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="js.cookie.js"></script>
     <!-- <script src="jquery.js"></script>  -->
 
     <script>
@@ -55,7 +56,6 @@
                 }
             });
         });
-
     </script>
 
 
@@ -88,7 +88,18 @@
         <div>&nbsp;</div>
     </div>
     <!--close splash-->
+    <div class="ordersum">
+        <h2>Order Summary</h2>
+        <hr>
 
+    </div>
+    <span class="total">Total: $0.00</span>
+    <script>
+        document.querySelector(".ordersum").innerHTML = Cookies.get("currentorders");
+        document.querySelector(".total").innerHTML = Cookies.get("subtotal");
+    </script>
+
+    <script src="order.js"></script>
 
 
     <div class="container"> </div>
@@ -141,36 +152,30 @@
             });
 
         });
-
     </script>
 
 
     <h1> ELIZABETH WARREN / <br> SHE PERSISTED </h1>
+
+    <h6>*click and drag your selection(s) onto the laptop to add to cart*</h6>
     <div id="form">
-
-        <form>
-
-
-            <div class="label"> Email: </div>
-            <input type="email" name="email" required="1" placeholder="@usc.edu" class="largebox"> <br> <br>
-
-
-            <div class="label"> Size? </div>
-            <input type="checkbox" name="1"> 1"
-            <input type="checkbox" name="2"> 2"
-            <input type="checkbox" name="2.5"> 2.5"
-            <br> <br> <br>
-
-
-            <div class="label"> &nbsp; </div>
-            <input type="submit" id="done" value="Done">
-            <div class="label"> &nbsp; </div>
-            <input type="reset" id="reset" value="Start Over">
-
-        </form>
-
+        <h4>Small $1</h4>
+        <img draggable="true" ondragstart="drag4(event)" src="img/persiststicker.png" class="stickSmall">
+        <h4>Large $2</h4>
+        <img draggable="true" ondragstart="drag5(event)" src="img/persiststicker.png" class="stickLarge">
 
     </div>
+
+
+
+    <div style="left:-150px; top:-300px" id="cartdiv" ondrop="drop4(event)" ondragover="allowDrop4(event)"></div>
+
+    <div style="left:95px; top:-90px" id="cartdiv2" ondrop="drop5(event)" ondragover="allowDrop5(event)">
+        <!--    <img src="/img/macbooklid.png" id="cart">-->
+
+    </div>
+
+    <script src="order.js"></script>
     <!--close img gallery-->
     <!--close product showcase div-->
 

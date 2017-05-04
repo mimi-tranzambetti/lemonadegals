@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <link rel=icon href="img/favicon.png">
 
     <meta charset="utf-8" />
@@ -76,6 +77,15 @@
                 <a href="about.html">About</a>
                 <a href="product.html" class="current">Shop</a>
                 <a href="breakdown.html">Breakdown</a>
+<<<<<<< HEAD
+
+                <a href="about.html">About</a>
+                <a href="product.html" class="current">Shop</a>
+                <a href="breakdown.html">Breakdown</a>
+                <a href="animation.html">Animation</a>
+
+=======
+>>>>>>> origin/master
             </div>
         </div>
         <!--close navbar-->
@@ -92,14 +102,18 @@
     </div>
     <!--close splash-->
 
-    <aside>
+    <div class="ordersum">
         <h2>Order Summary</h2>
         <hr>
-        
-    </aside>
-    <span id="total">Total: $0.00</span>
-    <!-- CLOSE ASIDE/RECEIPT DIV-->
 
+    </div>
+    <span class="total">0</span>
+    <!-- CLOSE ASIDE/RECEIPT DIV-->
+    <script>
+        document.querySelector(".ordersum").innerHTML = Cookies.get("currentorders");
+        document.querySelector(".total").innerHTML = total;
+    </script>
+    <script src="order.js"></script>
     <div class="container"> </div>
     <br> <br>
 
@@ -201,7 +215,7 @@
 
     </div>
 
-    <script src="order.js"></script>
+
 
 
     <!--contact div-->
@@ -221,13 +235,6 @@
     <!--private side lemons-->
 
 </body>
-<script>
-    var orders = document.querySelector("aside").innerHTML;
-    Cookies.set("currentorders", orders);
-    alert(Cookies.get("currentorders"));   
-</script>
-
-
 <!--close body-->
-    
+
 </html>
