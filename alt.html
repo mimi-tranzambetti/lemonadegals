@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="js.cookie.js"></script>
     <!-- <script src="jquery.js"></script>  -->
 
     <script>
@@ -53,7 +54,6 @@
 
 
         });
-
     </script>
 
 
@@ -85,6 +85,20 @@
         <div>&nbsp;</div>
     </div>
     <!--close splash-->
+    <div class="ordersum">
+        <h2>Order Summary</h2>
+        <hr>
+
+    </div>
+    <span class="total">0</span>
+    <script>
+        document.querySelector(".ordersum").innerHTML = Cookies.get("currentorders");
+        document.querySelector(".total").innerHTML = Cookies.get("subtotal");
+    </script>
+
+    <script src="order.js"></script>
+
+
 
 
 
@@ -138,34 +152,55 @@
             });
 
         });
-
     </script>
 
 
     <h1> ALTERNATIVE TRUMP </h1>
+    <h6>*click and drag your selection(s) onto the laptop to add to cart*</h6>
     <div id="form">
-
-        <form>
-
-
-            <div class="label"> Email: </div>
-            <input type="email" name="email" required="1" placeholder="@usc.edu" class="largebox"> <br> <br>
+        <h4>Small $1</h4>
+        <img draggable="true" ondragstart="drag8(event)" src="img/carrotsticker.png" class="stickSmall" id="smallDuck">
+        <h4>Large $2</h4>
+        <img draggable="true" ondragstart="drag9(event)" src="img/carrotsticker.png" class="stickLarge">
 
 
-            <div class="label"> Size? </div>
-            <input type="checkbox" name="1"> 1"
-            <input type="checkbox" name="2"> 2"
-            <input type="checkbox" name="2.5"> 2.5"
-            <br> <br> <br>
 
 
-            <div class="label"> &nbsp; </div>
-            <input type="submit" id="done" value="Done">
-            <div class="label"> &nbsp; </div>
-            <input type="reset" id="reset" value="Start Over">
 
-        </form>
 
+        <!--
+            <form>
+                
+                
+            <div class= "label" > Email: </div> 
+                <input type="email" name="email" required="1" placeholder="@usc.edu" class="largebox"> <br>  <br> 
+                
+                
+                <div class="label"> Size? </div> 
+                    <input type="checkbox" name="1"> 1" x 1" 
+                    <input type="checkbox" name="2"> 2" x 2"  
+                    <input type="checkbox" name="2.5"> 2.5" x 2.5" 
+                <br> <br> <br>
+                
+                
+                <div class="label"> &nbsp; </div>
+                <input type="submit" id="done" value="Done">
+                <div class="label"> &nbsp; </div>
+                <input type="reset" id="reset" value="Start Over">
+ 
+            </form>
+-->
+
+        <!--<div id="message1" style="visibility:hidden;">You added a small duck frump</div>-->
+    </div>
+
+    <div style="top:-270px" id="cartdiv" ondrop="drop8(event)" ondragover="allowDrop8(event)"></div>
+
+    <!--<div id="cartdiv" ondrop="drop2(event)" ondragover="allowDrop2(event)"></div>-->
+
+
+    <div style="top:100px" id="cartdiv2" ondrop="drop9(event)" ondragover="allowDrop9(event)">
+        <!--    <img src="/img/macbooklid.png" id="cart">-->
 
     </div>
     <!--close img gallery-->

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
     <link rel=icon href="img/favicon.png">
 
     <meta charset="utf-8" />
@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="js.cookie.js"></script>
     <!-- <script src="jquery.js"></script>  -->
 
     <script>
@@ -53,125 +54,142 @@
 
 
         });
+
     </script>
 
 
 </head>
 
 <body>
-        
-        <div class="header">
 
-            <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
-            <div class="navbar">
-                <div class="navlinks">
-                    <a href="about.html">About</a>
-                    <a href="product.html" class="current">Shop</a>
-                    <a href="breakdown.html">Breakdown</a>
-                    <a href="animation.html" id="animation">Animation</a>
-                </div>
+    <div class="header">
+
+        <a href="index.html"><img src="img/logonew.png" alt="logo" class="logo"> </a>
+        <div class="navbar">
+            <div class="navlinks">
+                <a href="about.html">About</a>
+                <a href="product.html" class="current">Shop</a>
+                <a href="breakdown.html">Breakdown</a>
+                <a href="animation.html" id="animation">Animation</a>
             </div>
-
-
         </div>
-      
 
-        <div class="splash" id="splash-about">
+
+    </div>
+
+
+    <div class="splash" id="splash-about">
+        <div>
+            <br><br><br><br><br>
+            <div class="title">Our Stickers</div>
+        </div>
+        <div>&nbsp;</div>
+    </div>
+
+    <div class="ordersum">
+        <h2>Order Summary</h2>
+        <hr>
+
+    </div>
+    <input type="button" id="clear" value="Clear Cart">
+    <span class="total">0</span>
+
+    <script src="order.js"></script>
+    <script>
+        document.querySelector(".ordersum").innerHTML = Cookies.get("currentorders");
+        document.querySelector(".total").innerHTML = "Total: $" +
+            Cookies.get("subtotal") + ".00";
+
+    </script>
+
+    <div class="container" style="background-color: #fffef9;">
+        <br> <br>
+        <h1>The Classic Collection</h1>
+
+    </div>
+
+    <div class="container">
+        <h1></h1>
+        <div class="gallery">
+
             <div>
-                <br><br><br><br><br>
-                <div class="title">Our Stickers</div>
+                <a href="dump.html"> <img src="img/dump-trump.png" class="sticker" id="dumphover"> </a>
+                <h3>Dump Trump</h3>
             </div>
-            <div>&nbsp;</div>
+            <div>
+                <a href="duck.html"> <img src="img/duck-frump.png" class="sticker" id="frumphover"> </a>
+                <h3>Duck Frump</h3>
+            </div>
+            <div>
+                <a href="persist.html"> <img src="img/she-persisted.png" class="sticker" id="persisthover"> </a>
+                <h3>Elizabeth Warren</h3>
+            </div>
+        </div>
+        <div class="gallery">
+            <div>
+                <a href="please.html"> <img src="img/bitch-please.png" class="sticker" id="pleasehover"> </a>
+                <h3>*****, Please</h3>
+            </div>
+            <div>
+                <a href="alt.html"> <img src="img/alt-trump.png" class="sticker" id="althover"> </a>
+                <h3>Alternative Trump</h3>
+            </div>
         </div>
 
-
-
-        <div class="container" style="background-color: #fffef9;">
-            <br> <br>
-            <h1>The Classic Collection</h1>
-
-        </div>
-        <div class="container">
-            <h1></h1>
-            <div class="gallery">
-
-                <div>
-                    <a href="dump.html"> <img src="img/dump-trump.png" class="sticker" id="dumphover"> </a>
-                    <h3>Dump Trump</h3>
-                </div>
-                <div>
-                    <a href="duck.html"> <img src="img/duck-frump.png" class="sticker" id="frumphover"> </a>
-                    <h3>Duck Frump</h3>
-                </div>
-                <div>
-                    <a href="persist.html"> <img src="img/she-persisted.png" class="sticker" id="persisthover"> </a>
-                    <h3>Elizabeth Warren</h3>
-                </div>
-            </div>
-            <div class="gallery">
-                <div>
-                    <a href="please.html"> <img src="img/bitch-please.png" class="sticker" id="pleasehover"> </a>
-                    <h3>*****, Please</h3>
-                </div>
-                <div>
-                    <a href="alt.html"> <img src="img/alt-trump.png" class="sticker" id="althover"> </a>
-                    <h3>Alternative Trump</h3>
-                </div>
-            </div>
-
-        </div>
-       <!--
+    </div>
+    <!--
 //        <div id="form"> 
 //            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJy3K8-rSP_K7pvD3SoSwD6IlTHxXOPsfWlfwfiDko3nanOQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 //        </div>
 //-->
-       
-        <script>
-            document.querySelector("#dumphover").addEventListener("mouseover", function() {
-                document.querySelector("#dumphover").src = "img/squarephoto/dump.jpg";
-            });
-            document.querySelector("#dumphover").addEventListener("mouseout", function() {
-                document.querySelector("#dumphover").src = "img/dump-trump.png";
-            });
 
-            document.querySelector("#frumphover").addEventListener("mouseover", function() {
-                document.querySelector("#frumphover").src = "img/squarephoto/duck.jpg";
-            });
-            document.querySelector("#frumphover").addEventListener("mouseout", function() {
-                document.querySelector("#frumphover").src = "img/duck-frump.png";
-            });
+    <script>
+        document.querySelector("#dumphover").addEventListener("mouseover", function() {
+            document.querySelector("#dumphover").src = "img/squarephoto/dump.jpg";
+        });
+        document.querySelector("#dumphover").addEventListener("mouseout", function() {
+            document.querySelector("#dumphover").src = "img/dump-trump.png";
+        });
 
-            document.querySelector("#persisthover").addEventListener("mouseover", function() {
-                document.querySelector("#persisthover").src = "img/squarephoto/persist.jpg";
-            });
-            document.querySelector("#persisthover").addEventListener("mouseout", function() {
-                document.querySelector("#persisthover").src = "img/she-persisted.png";
-            });
+        document.querySelector("#frumphover").addEventListener("mouseover", function() {
+            document.querySelector("#frumphover").src = "img/squarephoto/duck.jpg";
+        });
+        document.querySelector("#frumphover").addEventListener("mouseout", function() {
+            document.querySelector("#frumphover").src = "img/duck-frump.png";
+        });
 
-            document.querySelector("#pleasehover").addEventListener("mouseover", function() {
-                document.querySelector("#pleasehover").src = "img/squarephoto/please.jpg";
-            });
-            document.querySelector("#pleasehover").addEventListener("mouseout", function() {
-                document.querySelector("#pleasehover").src = "img/bitch-please.png";
-            });
+        document.querySelector("#persisthover").addEventListener("mouseover", function() {
+            document.querySelector("#persisthover").src = "img/squarephoto/persist.jpg";
+        });
+        document.querySelector("#persisthover").addEventListener("mouseout", function() {
+            document.querySelector("#persisthover").src = "img/she-persisted.png";
+        });
 
-            document.querySelector("#althover").addEventListener("mouseover", function() {
-                document.querySelector("#althover").src = "img/squarephoto/alt.jpg";
-            });
-            document.querySelector("#althover").addEventListener("mouseout", function() {
-                document.querySelector("#althover").src = "img/alt-trump.png";
-            });
-        </script>
+        document.querySelector("#pleasehover").addEventListener("mouseover", function() {
+            document.querySelector("#pleasehover").src = "img/squarephoto/please.jpg";
+        });
+        document.querySelector("#pleasehover").addEventListener("mouseout", function() {
+            document.querySelector("#pleasehover").src = "img/bitch-please.png";
+        });
 
-        <!-- <div class="container" style="background-color: #ffffef;"> 
+        document.querySelector("#althover").addEventListener("mouseover", function() {
+            document.querySelector("#althover").src = "img/squarephoto/alt.jpg";
+        });
+        document.querySelector("#althover").addEventListener("mouseout", function() {
+            document.querySelector("#althover").src = "img/alt-trump.png";
+        });
+
+    </script>
+
+    <!-- <div class="container" style="background-color: #ffffef;"> 
         <h1>Custom Requests</h1>
         <p>We take custom requests- we can vector any photo or artwork and deliver it to you as a full sheet of anywhere up to 10 stickers. Check out some of our samples below:</p>
         </div> -->
 
 
 
-        <!--close splash-->
-        <!--
+    <!--close splash-->
+    <!--
         <div class="container" style="background-color: #98dbd9; height: 500px;" id="customform">
              background: url('img/productshot/windowh.jpg') no-repeat; background-size: cover; background-position: 100% 80%; height: 800px
 
@@ -196,26 +214,26 @@
             </div>
            
         </div>-->
-        <!--close product showcase div-->
+    <!--close product showcase div-->
 
 
 
-        <!--contact div-->
+    <!--contact div-->
 
-        <div class="footer">
-            <div class="media-links">
-                <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
-                <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
-            </div>
-
-
-            <p>© 2017 - LEMONADE GALS</p>
+    <div class="footer">
+        <div class="media-links">
+            <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+            <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
         </div>
 
-        <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
-        <!--private side lemons-->
 
-    </body>
-    <!--close body-->
+        <p>© 2017 - LEMONADE GALS</p>
+    </div>
+
+    <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
+    <!--private side lemons-->
+
+</body>
+<!--close body-->
 
 </html>

@@ -3,9 +3,7 @@
     src: url("kenyan coffee rg.ttf");
 }
 
-
 body {
-
     padding: 0px;
     font-family: 'Nunito', sans-serif;
     background-color: ;
@@ -170,7 +168,7 @@ a {
 
 .footer {
     padding: 20px;
-    margin-bottom:0px;
+    margin-bottom: 0px;
     height: 80px;
     background-color: #222;
     color: #888;
@@ -265,10 +263,10 @@ a {
     float: right;
     width: 45%;
     text-align: left;
-    position:relative;
+    position: relative;
     right: 10%;
     padding-bottom: 1%;
-    padding-top: 1%;  
+    padding-top: 1%;
     margin: 0 auto;
 }
 
@@ -297,92 +295,108 @@ input {
     font-size: 10pt;
 }
 
-#filedrop{
+#filedrop {
     border: 7px dashed white;
     height: 30%;
     width: 20%;
     position: relative;
     bottom: 50px;
-    float:right;
+    float: right;
 }
-#customform{
+
+#customform {
     border: 3px solid black;
     height: 900px;
 }
-#description{
+
+#description {
     width: 300px;
     height: 100px;
 }
-#describe{
-    width:500px;
+
+#describe {
+    width: 500px;
 }
-.inchbox{
-    width:20px;
+
+.inchbox {
+    width: 20px;
 }
-.stickSmall{
+
+.stickSmall {
     width: 100px;
     position: relative;
     left: 20%;
-    z-index: 3;
+    z-index: 1;
 }
-.stickLarge{
+
+.stickLarge {
     width: 200px;
     position: relative;
     left: 20%;
-    z-index: 3;
+    z-index: 1;
 }
-aside{
-    width: 20%;
+
+.ordersum {
+    width: 16%;
     z-index: 2;
     position: absolute;
     float: right;
-    background-color: #F39191;  
+    background-color: #FFD145;
+    opacity: .6;
 }
-#cartdiv{
+
+#cartdiv {
     background-image: url(img/macbooklid.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
     width: 17%;
     float: right;
-    left: 6%;
-    top: 50px;
+    left: 33%;
+    top: -350px;
     height: 158px;
 }
-#cartdiv2{
+
+#cartdiv2 {
     background-image: url(img/macbooklid.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
     width: 17%;
     float: right;
-    left: 6%;
-    top: 100px;
+    left: 50%;
+    top: -150px;
     height: 158px;
 }
-#cart{
-    width: 100%;
+
+#cart {
+    width: 16%;
     float: right;
 }
-#total{
-    width: 15%;
+
+.total {
+    width: 16%;
     z-index: 2;
-    position: relative;
+    Pposition: relative;
     float: right;
-    background-color: #F39191;    
+    background-color: #FFD145;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    opacity: .6;
 }
 
+.receipt {
+    width: 16%;
+}
 
 .dropbtn {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     color: #458989;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-       font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -396,7 +410,7 @@ aside{
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -407,7 +421,6 @@ aside{
     display: block;
 }
 
-
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
@@ -417,159 +430,167 @@ aside{
 }
 
 .dropdown:hover .dropbtn {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.typed-cursor{
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#pickerbutton{
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#pickerbutton {
     font-family: "Nunito", sans-serif;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     font-size: 8pt;
     border-radius: 7px;
     color: white;
 }
 
-#pickerdivhelp{
-    
+#pickerdivhelp {}
+
+.logo {
+    visibility: visible;
 }
-.logo{
-        visibility: visible;
-    }
 
 @media (max-width: 1024px) {
     h1 {
-    font-size: 18pt;
+        font-size: 18pt;
     }
-    
     .title {
-    margin: 5px;
-    font-size: 30pt;
-}
-    #splash-about, #bts, #dealroomheader{
+        margin: 5px;
+        font-size: 30pt;
+    }
+    #splash-about,
+    #bts,
+    #dealroomheader {
         background-attachment: scroll;
         background-position: 0px;
     }
-    
     #bts {
-    background-size: cover;
-    height: 100%;
-    background-attachment: scroll;
-}
-    p{
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+    p {
         padding-right: 2%;
         padding-left: 2%;
     }
-
     #form {
-    float: none;
-    clear: both;
-    width: 70%;
-    margin: auto;
-    right: 0%;
+        float: none;
+        clear: both;
+        width: 70%;
+        margin: auto;
+        right: 0%;
         text-align: center;
-    
-}
-    #productleft {
-    float: none;
-    width: 80%;
-    margin: auto;
-}
-    
-    .productsticker {
-    width: 300px;
-    height: 300px;
-}
-    
-    .label {
-    width: 100px;
-    margin-right: 20px;
-    text-align: right;
-    
-}
-
-    .sticker {
-    width: 250px;
-    height: 250px;
-}
-    
-    
-}
-
-#animation{
-        visibility: visible;
     }
+    #productleft {
+        float: none;
+        width: 80%;
+        margin: auto;
+    }
+    .productsticker {
+        width: 300px;
+        height: 300px;
+    }
+    .label {
+        width: 100px;
+        margin-right: 20px;
+        text-align: right;
+    }
+    .sticker {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+#animation {
+    visibility: visible;
+}
+
+#clear {
+    float: right;
+}
 
 @media (max-width: 540px) {
     h1 {
-    font-size: 14pt;
+        font-size: 14pt;
     }
     .title {
-    margin: 5px;
-    font-size: 20pt;
-}
+        margin: 5px;
+        font-size: 20pt;
+    }
     .productsticker {
-    width: 250px;
-    height: 250px;
-}    
+        width: 250px;
+        height: 250px;
+    }
     .label {
-    width: 50px;
-    
-}
+        width: 50px;
+    }
     .sticker {
-    width: 200px;
-    height: 200px;
-}
+        width: 200px;
+        height: 200px;
+    }
     #nameleft {
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-bottom: -60px;
-}
-    
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: -60px;
+    }
     #nameright {
-    float: none;
-    width: 90%;
-    clear:both;
-    margin: auto;
-    height: 100%;
-    padding-right: 0%;
-    padding-bottom: 5%;
-}
+        float: none;
+        width: 90%;
+        clear: both;
+        margin: auto;
+        height: 100%;
+        padding-right: 0%;
+        padding-bottom: 5%;
+    }
     a {
-    text-decoration: none;
-    color: #eee;
-}
-    
-    #animation{
+        text-decoration: none;
+        color: #eee;
+    }
+    #animation {
         visibility: hidden;
     }
-    
-    .logo{
+    .logo {
         visibility: collapse;
     }
-
 }
-
-
-
