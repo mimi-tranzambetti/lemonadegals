@@ -6,7 +6,7 @@
 body {
     padding: 0px;
     font-family: 'Nunito', sans-serif;
-    background-color: ;
+/*    background-color: ;*/
     margin: 0px;
     padding: 0px;
     margin-top: 0px;
@@ -74,6 +74,7 @@ a {
 
 .navbar {
     padding: 0px 40px;
+    z-index: 550;
 }
 
 .navlinks a {
@@ -584,6 +585,7 @@ input {
         padding-bottom: 5%;
     }
     a {
+<<<<<<< HEAD
         text-decoration: none;
         color: #eee;
     }
@@ -591,6 +593,34 @@ input {
         visibility: hidden;
     }
     .logo {
+=======
+    text-decoration: none;
+    color: #eee;
+}
+    
+    
+    .logo{
+>>>>>>> origin/master
         visibility: collapse;
     }
 }
+<<<<<<< HEAD
+=======
+
+
+
+@media (max-width: 471px){
+	.querynav{
+		clear: both;
+		padding-right:40%;
+		padding-left:40%;
+		line-height: 1;
+		text-align: center;
+	}
+	.title{
+		display:none;
+	}
+}
+
+
+>>>>>>> origin/master
